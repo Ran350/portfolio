@@ -2,10 +2,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "repository": "git@github.com:Ran350/ran350.github.io.git",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "export": "next export",
+    "check:format": "yarn prettier --check src",
+    "check:lint": "yarn eslint src"
   },
   "dependencies": {
     "next": "10.1.3",
