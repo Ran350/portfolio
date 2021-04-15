@@ -20,6 +20,7 @@ const IndexPage: NextPage = () => (
         <Button
           text="GitHub"
           link="https://github.com/Ran350"
+          name="GitHub"
           fontAwesome={faGithub}
         />
       }
@@ -52,7 +53,14 @@ const IndexPage: NextPage = () => (
 
     <Section
       title="Gallery"
-      button={<Button text="Gallery" link="/gallery" fontAwesome={faPalette} />}
+      button={
+        <Button
+          text="Gallery"
+          link="/gallery"
+          name="Palette"
+          fontAwesome={faPalette}
+        />
+      }
     >
       <Gallery imgPath="./ga.jpeg" title="" />
       <Gallery imgPath="./ga.jpeg" title="" />
