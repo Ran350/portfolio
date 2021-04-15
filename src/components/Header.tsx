@@ -19,7 +19,7 @@ export const Header: VFC<Props> = ({ title }) => {
   return (
     <>
       <header
-        className="w-full min-h-screen relative bg-center bg-cover flex flex-col justify-between text-white text-lg md:text-2xl"
+        className="w-full min-h-screen relative bg-center bg-cover flex flex-col justify-between text-white"
         style={{ backgroundImage: 'url("/chess.png")' }}
       >
         <nav className="mb-8 p-8 flex justify-between">
@@ -44,9 +44,14 @@ export const Header: VFC<Props> = ({ title }) => {
                 title: "Contact",
               },
             ].map(({ path, title }) => (
-              <div key={title} className={path === currentPath ? "text-yellow-400" : ""}>
-                <a href={path} className="m-4">{title}</a>
-              </div>
+              <h1
+                key={title}
+                className={path === currentPath ? "text-yellow-400" : ""}
+              >
+                <a href={path} className="m-4 text-2xl">
+                  {title}
+                </a>
+              </h1>
             ))}
           </div>
         </nav>
@@ -59,7 +64,7 @@ export const Header: VFC<Props> = ({ title }) => {
             {title}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center text-2xl">
             <div className="m-2">
               <a href="/">Develop</a>
             </div>
@@ -92,7 +97,7 @@ export const Header: VFC<Props> = ({ title }) => {
               <FontAwesomeIcon
                 title={name}
                 icon={icon}
-                className="m-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                className="m-8 text-3xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
               />
             </a>
           ))}
