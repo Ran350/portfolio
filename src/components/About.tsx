@@ -19,7 +19,7 @@ export const About: VFC<Props> = ({ title, contents }) => (
       <div className="mx-auto w-min">
         {/* FIXME:もっとスマートに書けへん？ */}
         {contents.map((c) => (
-          <a href={c?.link} target="_blank" rel="noopener">
+          <a href={c?.link} key={c.content} target="_blank" rel="noopener">
             <h1
               className={`text-left ${
                 c.link ? "text-blue-800 hover:text-blue-400" : null
