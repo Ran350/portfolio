@@ -21,8 +21,14 @@ class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <meta charSet="UTF-8" />
+
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+            rel="stylesheet"
+          />
         </Head>
-        <body className="bg-gray-100 font-sans text-gray-600">
+        <body className="bg-gray-100 font-opensans text-gray-600">
           <Main />
           <NextScript />
         </body>

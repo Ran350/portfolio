@@ -5,6 +5,16 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      opensans: [
+        "Open Sans",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Arial",
+        "Noto Sans",
+        "sans-serif",
+      ],
+    },
     extend: {},
   },
   variants: {
