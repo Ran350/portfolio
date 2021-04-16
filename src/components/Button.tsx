@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
-import { Children, VFC } from "react";
+import { VFC } from "react";
 
 type Props = {
   text: string;
