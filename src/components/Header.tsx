@@ -59,7 +59,7 @@ export const Header: VFC<Props> = ({ title }) => {
         <div>
           <div
             // style="font-family: 'Josefin Sans', 'Open Sans', sans-serif"
-            className="text-center text-4xl sm:text-6xl md:text-8xl"
+            className="text-center text-4xl sm:text-6xl md:text-8xl font-telex"
           >
             {title}
           </div>
