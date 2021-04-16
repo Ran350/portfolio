@@ -72,37 +72,33 @@ const IndexPage: NextPage = () => (
       <About
         title="Belong"
         contents={[
-          { content: "RCC", link: "http://www.rcc.ritsumei.ac.jp/" },
-          { content: "RDC", link: "https://rits-dajare.github.io/" },
-          { content: "KC3", link: "https://kc3.me/" },
+          { text: "RCC", link: "http://www.rcc.ritsumei.ac.jp/" },
+          { text: "RDC", link: "https://rits-dajare.github.io/" },
+          { text: "KC3", link: "https://kc3.me/" },
         ]}
       />
       <About
         title="Like"
-        contents={[
-          { content: "Blender" },
-          { content: "Python" },
-          { content: "将棋" },
-        ]}
+        contents={[{ text: "Blender" }, { text: "Python" }, { text: "将棋" }]}
       />
       <About
         title="Studying"
         contents={[
-          { content: "Web Front" },
-          { content: "NLP" },
-          { content: "Visualization" },
+          { text: "Web Front" },
+          { text: "NLP" },
+          { text: "Visualization" },
         ]}
       />
       <About
         title="SNS"
         contents={[
-          { content: "Twitter", link: "https://twitter.com/hoshina350" },
+          { text: "Twitter", link: "https://twitter.com/hoshina350" },
           {
-            content: "Instagram",
+            text: "Instagram",
             link: "https://www.instagram.com/ran350_3d/",
           },
-          { content: "GitHub", link: "https://github.com/Ran350" },
-          { content: "Qiita", link: "https://qiita.com/Ran350" },
+          { text: "GitHub", link: "https://github.com/Ran350" },
+          { text: "Qiita", link: "https://qiita.com/Ran350" },
         ]}
       />
     </Section>

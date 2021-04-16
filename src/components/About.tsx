@@ -2,7 +2,7 @@ import { ReactNode, VFC } from "react";
 import { Card } from "../components/Card";
 
 type Content = {
-  content: string;
+  text: string;
   link?: string;
 };
 
@@ -18,14 +18,19 @@ export const About: VFC<Props> = ({ title, contents }) => (
 
       <div className="mx-auto w-min">
         {/* FIXME:もっとスマートに書けへん？ */}
-        {contents.map((c) => (
-          <a href={c?.link} key={c.content} target="_blank" rel="noopener">
+        {contents.map((context) => (
+          <a
+            href={context?.link}
+            key={context.text}
+            target="_blank"
+            rel="noopener"
+          >
             <h1
               className={`text-left ${
-                c.link ? "text-blue-800 hover:text-blue-400" : null
+                context.link ? "text-blue-800 hover:text-blue-400" : null
               }`}
             >
-              {c.content}
+              {context.text}
             </h1>
           </a>
         ))}
