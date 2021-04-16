@@ -6,7 +6,7 @@ import { NextPage } from "next";
 import { About } from "../components/About";
 import { Button } from "../components/Button";
 import { Develop } from "../components/Develop";
-import { Gallery } from "../components/Gallery";
+import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
 import { Section } from "../components/Section";
 
@@ -32,27 +32,27 @@ const IndexPage: NextPage = () => (
         description="Pretender / Official髭男dism"
       />
       <Develop
-        imgPath="./lv.png"
-        link=""
-        title="title"
-        description="description"
+        imgPath="./this-site.png"
+        link="https://github.com/Ran350/ran350.github.io"
+        title="ran350.github.io / Next.js"
+        description="this web site"
       />
       <Develop
-        imgPath="./lv.png"
-        link=""
-        title="title"
-        description="description"
+        imgPath="./nlp-100-knocks.png"
+        link="https://github.com/Ran350/nlp-100-knocks"
+        title="nlp-100-knocks / Python"
+        description="NLP 100 knocks challenge"
       />
       <Develop
-        imgPath="./lv.png"
-        link=""
-        title="title"
-        description="description"
+        imgPath="./shell-in-c.png"
+        link="https://github.com/Ran350/network-development-experiment/tree/main/shell"
+        title="Shell in C / Clang"
+        description="simple shell implementation"
       />
     </Section>
 
     <Section
-      title="Gallery"
+      title="Graphic arts"
       button={
         <Button
           text="Gallery"
@@ -62,10 +62,10 @@ const IndexPage: NextPage = () => (
         />
       }
     >
-      <Gallery imgPath="./ga.jpeg" title="" />
-      <Gallery imgPath="./ga.jpeg" title="" />
-      <Gallery imgPath="./ga.jpeg" title="" />
-      <Gallery imgPath="./ga.jpeg" title="" />
+      <GraphicArt imgPath="./ga.jpeg" title="" />
+      <GraphicArt imgPath="./twist-circle.jpeg" title="" />
+      <GraphicArt imgPath="./glass-chess.png" title="" />
+      <GraphicArt imgPath="./toon_GB.png" title="" />
     </Section>
 
     <Section title="about">
