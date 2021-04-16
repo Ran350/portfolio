@@ -9,10 +9,10 @@ type Props = {
 };
 
 export const Develop: VFC<Props> = ({ imgPath, link, title, description }) => (
-  <Card>
+  <Card isHoverShadow={true}>
     <a href={link} target="_blank" rel="noopener">
       {/* TODO: linkがundefinedのときはaタグが無効になるようにしたい */}
-      <img src={imgPath} alt={title} />
+      <img src={imgPath} alt={title} className="object-cover h-64 w-full" />
       <h1 className="text-xl">{title}</h1>
       <h1 className="text-md text-gray-400">{description}</h1>
     </a>
