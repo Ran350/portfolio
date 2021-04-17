@@ -79,12 +79,16 @@ const IndexPage: NextPage = () => (
       />
       <About
         title="Like"
-        contents={[{ text: "Blender" }, { text: "Python" }, { text: "将棋" }]}
+        contents={[
+          { text: "blender" },
+          { text: "将棋" },
+          { text: "Design theory" },
+        ]}
       />
       <About
-        title="Studying"
+        title="Learning"
         contents={[
-          { text: "Web Front" },
+          { text: "Web front-end" },
           { text: "NLP" },
           { text: "Visualization" },
         ]}

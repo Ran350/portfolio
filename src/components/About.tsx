@@ -14,7 +14,7 @@ type Props = {
 export const About: VFC<Props> = ({ title, contents }) => (
   <Card>
     <div className="m-4 mb-6 text-xl">
-      <h1 className="w-min text-left text-gray-300">{title}</h1>
+      <h1 className="mb-2 w-min text-left text-gray-300">{title}</h1>
 
       <div className="mx-auto w-min">
         {/* FIXME:もっとスマートに書けへん？ */}
@@ -26,7 +26,7 @@ export const About: VFC<Props> = ({ title, contents }) => (
             rel="noopener"
           >
             <h1
-              className={`text-left ${
+              className={`text-left whitespace-nowrap ${
                 context.link ? "text-blue-800 hover:text-blue-400" : null
               }`}
             >
