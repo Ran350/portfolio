@@ -10,16 +10,18 @@ import { VFC } from "react";
 
 type Props = {
   title: string;
+  subTitles: string[];
+  imageUrl: string;
 };
 
-export const Header: VFC<Props> = ({ title }) => {
+export const Header: VFC<Props> = ({ title, imageUrl, subTitles }) => {
   const router = useRouter();
   const currentPath = router.asPath;
 
   return (
     <header
       className="w-full min-h-screen relative bg-center bg-cover flex flex-col justify-between text-white"
-      style={{ backgroundImage: 'url("/chess.png")' }}
+      style={{ backgroundImage: `url(${imageUrl})` }}
     >
       <nav className="mb-8 p-8 flex justify-between">
         <div className="">
@@ -55,20 +57,23 @@ export const Header: VFC<Props> = ({ title }) => {
         </div>
       </nav>
 
-      <div>
+      <div className="filter drop-shadow-xl">
         <div className="text-center text-4xl sm:text-6xl md:text-8xl font-telex">
           {title}
         </div>
 
-        <div className="flex justify-center text-2xl">
-          <div className="m-2">
-            <a href="/">Develop</a>
-          </div>
-          <div className="m-2 border-r-2 border-white"></div>
-          <div className="m-2">
-            <a href="/"> Graphic Arts</a>
-          </div>
-        </div>
+        <ul className="flex justify-center text-2xl">
+          {subTitles.map((subtitle, index) => (
+            <li
+              key={subtitle}
+              className={`p-2 border-current ${
+                index !== 0 ? "border-l-2" : ""
+              }`}
+            >
+              {subtitle}
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="mb-4 flex justify-center">
