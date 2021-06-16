@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { VFC } from "react";
+
 import { HeaderNavi } from "./HeaderNavi";
 
 type Props = {
@@ -14,8 +15,6 @@ type Props = {
 };
 
 export const Header: VFC<Props> = ({ title, imageUrl, subTitles }) => {
-
-
   return (
     <header
       className="w-full min-h-screen relative bg-center bg-cover flex flex-col justify-between text-white"

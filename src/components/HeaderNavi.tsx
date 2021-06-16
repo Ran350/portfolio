@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { VFC } from "react";
 import { useRouter } from "next/router";
+import { VFC } from "react";
 
 type Props = {
   textColor?: string;

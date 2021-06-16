@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+
 import { HeaderNavi } from "../components/HeaderNavi";
 
 const ContactPage: NextPage = () => (
