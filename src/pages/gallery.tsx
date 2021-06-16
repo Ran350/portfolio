@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+
 import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
 import { Layout } from "../components/Layout";
