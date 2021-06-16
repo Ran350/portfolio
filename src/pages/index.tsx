@@ -1,6 +1,5 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
-
 import { NextPage } from "next";
 
 import { About } from "../components/About";
