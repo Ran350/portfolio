@@ -1,7 +1,7 @@
 import {
   faGithub,
   faInstagram,
-  faTwitter
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { VFC } from "react";
