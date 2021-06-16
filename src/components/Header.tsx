@@ -4,9 +4,8 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import { VFC } from "react";
+import { HeaderNavi } from "./HeaderNavi";
 
 type Props = {
   title: string;
@@ -15,47 +14,14 @@ type Props = {
 };
 
 export const Header: VFC<Props> = ({ title, imageUrl, subTitles }) => {
-  const router = useRouter();
-  const currentPath = router.asPath;
+
 
   return (
     <header
       className="w-full min-h-screen relative bg-center bg-cover flex flex-col justify-between text-white"
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <nav className="mb-8 p-8 flex justify-between">
-        <div className="">
-          <Link href="/">
-            <img className="rounded-full w-10" src="./myicon.jpg" alt="" />
-          </Link>
-        </div>
-
-        <div className="flex my-auto">
-          {[
-            {
-              path: "/",
-              title: "Home",
-            },
-            {
-              path: "/gallery",
-              title: "Gallery",
-            },
-            {
-              path: "/contact",
-              title: "Contact",
-            },
-          ].map(({ path, title }) => (
-            <h1
-              key={title}
-              className={path === currentPath ? "text-yellow-400" : ""}
-            >
-              <Link href={path}>
-                <div className="m-4 text-2xl">{title}</div>
-              </Link>
-            </h1>
-          ))}
-        </div>
-      </nav>
+      <HeaderNavi />
 
       <div className="filter drop-shadow-xl">
         <div className="text-center text-4xl sm:text-6xl md:text-8xl font-telex">
