@@ -90,7 +90,7 @@ export const Header: VFC<Props> = ({ title }) => {
             url: "https://github.com/Ran350",
           },
         ].map(({ name, icon, url }) => (
-          <a href={url} key={name} target="_blank" rel="noopener">
+          <a href={url} key={name} target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               title={name}
               icon={icon}

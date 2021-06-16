@@ -1,10 +1,10 @@
-import { VFC } from "react";
 import {
   faGithub,
   faInstagram,
-  faTwitter,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { VFC } from "react";
 
 export const Footer: VFC = () => (
   <div className="bg-gray-200 shadow-inner py-4 px-16 text-gray-400 flex justify-between">
@@ -36,7 +36,7 @@ export const Footer: VFC = () => (
           url: "https://github.com/Ran350",
         },
       ].map(({ name, icon, url }) => (
-        <a href={url} key={name} target="_blank" rel="noopener">
+        <a href={url} key={name} target="_blank" rel="noreferrer">
           <FontAwesomeIcon title={name} icon={icon} className="ml-4 text-xl" />
         </a>
       ))}

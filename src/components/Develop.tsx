@@ -1,4 +1,4 @@
-import { ReactNode, VFC } from "react";
+import { VFC } from "react";
 import { Card } from "../components/Card";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 export const Develop: VFC<Props> = ({ imgPath, link, title, description }) => (
   <Card isHoverShadow={true}>
-    <a href={link} target="_blank" rel="noopener">
+    <a href={link} target="_blank" rel="noreferrer">
       {/* TODO: linkがundefinedのときはaタグが無効になるようにしたい */}
       <img src={imgPath} alt={title} className="object-cover h-64 w-full" />
       <h1 className="text-xl">{title}</h1>

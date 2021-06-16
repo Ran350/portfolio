@@ -1,6 +1,5 @@
-import { FC } from "react";
-import ClassNames from "classnames";
 import classNames from "classnames";
+import { FC } from "react";
 
 type Props = {
   isHoverShadow?: boolean;

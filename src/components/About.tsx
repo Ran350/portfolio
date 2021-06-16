@@ -1,4 +1,5 @@
-import { ReactNode, VFC } from "react";
+import { VFC } from "react";
+
 import { Card } from "../components/Card";
 
 type Content = {
@@ -23,7 +24,7 @@ export const About: VFC<Props> = ({ title, contents }) => (
             href={context?.link}
             key={context.text}
             target="_blank"
-            rel="noopener"
+            rel="noreferrer"
           >
             <h1
               className={`text-left whitespace-nowrap ${
