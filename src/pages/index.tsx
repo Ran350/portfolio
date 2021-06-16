@@ -7,10 +7,11 @@ import { Button } from "../components/Button";
 import { Develop } from "../components/Develop";
 import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
+import { Layout } from "../components/Layout";
 import { Section } from "../components/Section";
 
 const IndexPage: NextPage = () => (
-  <>
+  <Layout>
     <Header
       title="Portfolio"
       subTitles={["Develop", "Graphic Art"]}
@@ -115,7 +116,7 @@ const IndexPage: NextPage = () => (
         ]}
       />
     </Section>
-  </>
+  </Layout>
 );
 
 export default IndexPage;

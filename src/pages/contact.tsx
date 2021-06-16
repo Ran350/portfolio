@@ -1,9 +1,9 @@
 import { NextPage } from "next";
-
 import { HeaderNavi } from "../components/HeaderNavi";
+import { Layout } from "../components/Layout";
 
 const ContactPage: NextPage = () => (
-  <>
+  <Layout>
     <HeaderNavi textColor="text-gray-600" />
 
     <h1 className="my-16 text-center text-3xl sm:text-4xl md:text-6xl font-telex">
@@ -30,7 +30,7 @@ const ContactPage: NextPage = () => (
         Instagram
       </a>
     </h1>
-  </>
+  </Layout>
 );
 
 export default ContactPage;
