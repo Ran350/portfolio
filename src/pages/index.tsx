@@ -7,16 +7,11 @@ import { Button } from "../components/Button";
 import { Develop } from "../components/Develop";
 import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
+import { Layout } from "../components/Layout";
 import { Section } from "../components/Section";
 
-// これはなんや！
-// if (typeof window !== "undefined") {
-//   window.open("https://www.smt-cinema.com/site/kyoto/");
-//   location.href = "https://pompo-the-cinephile.com/";
-// }
-
 const IndexPage: NextPage = () => (
-  <>
+  <Layout>
     <Header
       title="Portfolio"
       subTitles={["Develop", "Graphic Art"]}
@@ -121,7 +116,7 @@ const IndexPage: NextPage = () => (
         ]}
       />
     </Section>
-  </>
+  </Layout>
 );
 
 export default IndexPage;

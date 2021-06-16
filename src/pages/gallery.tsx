@@ -2,10 +2,11 @@ import { NextPage } from "next";
 
 import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
+import { Layout } from "../components/Layout";
 import { Section } from "../components/Section";
 
-const IndexPage: NextPage = () => (
-  <>
+const GalleryPage: NextPage = () => (
+  <Layout>
     <Header
       title="Graphic arts"
       subTitles={["Geometric", "Photorealistic", "Toon"]}
@@ -36,7 +37,7 @@ const IndexPage: NextPage = () => (
       <GraphicArt imgPath="./graphic/toon/premiereball.jpg" title="" />
       <GraphicArt imgPath="./graphic/toon/superball.jpg" title="" />
     </Section>
-  </>
+  </Layout>
 );
 
-export default IndexPage;
+export default GalleryPage;
