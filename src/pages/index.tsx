@@ -9,12 +9,6 @@ import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
 import { Section } from "../components/Section";
 
-// これはなんや！
-// if (typeof window !== "undefined") {
-//   window.open("https://www.smt-cinema.com/site/kyoto/");
-//   location.href = "https://pompo-the-cinephile.com/";
-// }
-
 const IndexPage: NextPage = () => (
   <>
     <Header

@@ -4,7 +4,7 @@ import { GraphicArt } from "../components/GraphicArt";
 import { Header } from "../components/Header";
 import { Section } from "../components/Section";
 
-const IndexPage: NextPage = () => (
+const GalleryPage: NextPage = () => (
   <>
     <Header
       title="Graphic arts"
@@ -39,4 +39,4 @@ const IndexPage: NextPage = () => (
   </>
 );
 
-export default IndexPage;
+export default GalleryPage;
