@@ -2,20 +2,45 @@
 
 # [ran350.github.io](https://ran350.github.io/)
 
-</div>
+![Deploy](https://github.com/Ran350/ran350.github.io/workflows/Deploy/badge.svg)
+![Code Check](https://github.com/Ran350/ran350.github.io/workflows/Code%20Check/badge.svg)
 
-## フェーズ
-現在開発中
-トップページ（レスポンシブ非対応）のみ実装
+
+</div>
 
 ## Develop
 
-あとで書こうね
+### Requirements
+
+- [Node.js](https://nodejs.org/) - V~14
+- [yarn](https://yarnpkg.com/) - V~1
+
+### Preparation
+```sh
+git clone <this repo>
+cd ran350.github.io
+yarn install
+```
+
+### Commands
+
+See `scripts` section of [package.json](./package.json)
+
+- `yarn dev` - runs in developing mode
+- `yarn build && yarn export` - exports HTML files and others in `./out`
+- `yarn run check` - checks with code formatting with Prettier, type checking with tsc, linting with ESLint
 
 ## Continuos Integrations (CI)
 
-あとで書こうね
+See [.github/workflows/code-check.yml](./.github/workflows/code-check.yml)
+
+This workflows runs `yarn run check` in pushing/PR on `main` branch.
 
 ## Continuous Delivery (CD)
 
-あとで書こうね
+See [.github/workflows/deploy.yml](./.github/workflows/deploy.yml)
+
+This workflows runs `yarn install && yarn build && yarn export` in pushing/PR on `main` branch, then deploys using GitHub Pages.
+
+## TODO
+See [issue](https://github.com/Ran350/ran350.github.io/issues).
