@@ -20,7 +20,11 @@ module.exports = {
         "sans-serif",
       ],
     },
-    extend: {},
+    extend: {
+      zIndex: {
+        "-1": "-1",
+      },
+    },
   },
   variants: {
     extend: {},

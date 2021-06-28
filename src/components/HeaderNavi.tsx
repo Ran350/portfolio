@@ -12,7 +12,7 @@ export const HeaderNavi: VFC<Props> = ({ textColor = "text-write" }) => {
   const currentPath = router.asPath;
 
   return (
-    <nav className="mb-8 p-8 flex justify-between">
+    <nav className="p-8 flex justify-between">
       <Link href="/">
         <div className="flex flex-col justify-center">
           <Image
