@@ -5,7 +5,7 @@
   "repository": "git@github.com:Ran350/ran350.github.io.git",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next start && next export",
+    "build": "next build && next export",
     "start": "next start",
     "export": "next export",
     "check": "npm-run-all check:*",
