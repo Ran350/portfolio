@@ -15,7 +15,7 @@ const IndexPage: NextPage = () => (
     <Header
       title="Portfolio"
       subTitles={["Develop", "Graphic Art"]}
-      imageUrl="./graphic/photorealistic/chess.jpg"
+      imageUrl="/graphic/photorealistic/chess.jpg"
     />
 
     <Section
@@ -30,25 +30,25 @@ const IndexPage: NextPage = () => (
       }
     >
       <Develop
-        imgPath="./develop/lv.png"
+        imgPath="/develop/lv.png"
         link="https://github.com/Ran350/Lyrics-visualize"
         title="Lyrics-visualize / Python"
         description="Pretender / Official髭男dism"
       />
       <Develop
-        imgPath="./develop/this-site.jpg"
+        imgPath="/develop/this-site.jpg"
         link="https://github.com/Ran350/ran350.github.io"
         title="ran350.github.io / Next.js"
         description="this web site"
       />
       <Develop
-        imgPath="./develop/nlp-100-knocks.png"
+        imgPath="/develop/nlp-100-knocks.png"
         link="https://github.com/Ran350/nlp-100-knocks"
         title="nlp-100-knocks / Python"
         description="NLP 100 knocks challenge"
       />
       <Develop
-        imgPath="./develop/shell-in-c.png"
+        imgPath="/develop/shell-in-c.png"
         link="https://github.com/Ran350/network-development-experiment/tree/main/shell"
         title="Shell in C / Clang"
         description="simple shell implementation"
@@ -66,16 +66,10 @@ const IndexPage: NextPage = () => (
         />
       }
     >
-      <GraphicArt
-        imgPath="./graphic/geometric/twist-circle-gray.jpg"
-        title=""
-      />
-      <GraphicArt
-        imgPath="./graphic/geometric/twist-circle-blue.jpg"
-        title=""
-      />
+      <GraphicArt imgPath="/graphic/geometric/twist-circle-gray.jpg" title="" />
+      <GraphicArt imgPath="/graphic/geometric/twist-circle-blue.jpg" title="" />
       <GraphicArt imgPath="/graphic/photorealistic/glass-chess.jpg" title="" />
-      <GraphicArt imgPath="./graphic/toon/goldball.jpg" title="" />
+      <GraphicArt imgPath="/graphic/toon/goldball.jpg" title="" />
     </Section>
 
     <Section title="about">
