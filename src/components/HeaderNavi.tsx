@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { VFC } from "react";
@@ -12,11 +13,17 @@ export const HeaderNavi: VFC<Props> = ({ textColor = "text-write" }) => {
 
   return (
     <nav className="mb-8 p-8 flex justify-between">
-      <div className="">
-        <Link href="/">
-          <img className="rounded-full w-10" src="./myicon.jpg" alt="" />
-        </Link>
-      </div>
+      <Link href="/">
+        <div className="flex flex-col justify-center">
+          <Image
+            src="/myicon.jpg"
+            alt="header logo"
+            width={42}
+            height={42}
+            className="rounded-full "
+          />
+        </div>
+      </Link>
 
       <div className="flex my-auto">
         {[
