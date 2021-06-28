@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { VFC } from "react";
 
 import { Card } from "./Card";
@@ -9,6 +10,8 @@ type Props = {
 
 export const GraphicArt: VFC<Props> = ({ imgPath, title }) => (
   <Card isHoverShadow={true}>
-    <img src={imgPath} alt={title} className="w-full" />
+    <div className="flex flex-col justify-center">
+      <Image src={imgPath} alt={title} width={360} height={360} />
+    </div>
   </Card>
 );
