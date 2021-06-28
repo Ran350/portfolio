@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const Develop: VFC<Props> = ({ imgPath, link, title, description }) => (
-  <Card isHoverShadow={true}>
+  <Card isHoverShadow={Boolean(link)}>
     <a href={link} target="_blank" rel="noreferrer">
       <Image
         src={imgPath}
