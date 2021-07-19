@@ -24,6 +24,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        <title>Ran350 | Portfolio</title>
+      </Head>
       <Component {...pageProps} />
     </>
   );
