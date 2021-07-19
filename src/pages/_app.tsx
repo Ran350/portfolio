@@ -1,4 +1,5 @@
 import { AppProps } from "next/app";
+import { Head } from "next/document";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
