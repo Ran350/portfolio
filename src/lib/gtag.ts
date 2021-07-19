@@ -9,8 +9,8 @@ export const pageview = (url: string): void => {
   });
 };
 
-//developers.google.com/analytics/devguides/collection/gtagjs/events
-https: type GaEventProps = {
+// https://developers.google.com/analytics/devguides/collection/gtagjs/events
+type GaEventProps = {
   action: string;
   category: string;
   label: string;
