@@ -31,28 +31,28 @@ const IndexPage: NextPage = () => (
       }
     >
       <Develop
-        imgPath="./develop/lv.png"
-        link="https://github.com/Ran350/Lyrics-visualize"
-        title="Lyrics-visualize / Python"
-        description="Pretender / Official髭男dism"
-      />
-      <Develop
         imgPath="./develop/this-site.jpg"
         link="https://github.com/Ran350/ran350.github.io"
-        title="ran350.github.io / Next.js"
-        description="this web site"
+        title="ran350.github.io"
+        description="Next.js / Tailwind CSS"
       />
       <Develop
-        imgPath="./develop/nlp-100-knocks.png"
-        link="https://github.com/Ran350/nlp-100-knocks"
-        title="nlp-100-knocks / Python"
-        description="NLP 100 knocks challenge"
+        imgPath="./develop/web-wordcloud.jpg"
+        link="https://ran350.github.io/web-wordcloud"
+        title="Web WordCloud"
+        description="Web Assembly / Next.js"
       />
       <Develop
-        imgPath="./develop/shell-in-c.png"
-        link="https://github.com/Ran350/network-development-experiment/tree/main/shell"
-        title="Shell in C / Clang"
-        description="simple shell implementation"
+        imgPath="./develop/lv.png"
+        link="https://github.com/Ran350/Lyrics-visualize"
+        title="Lyrics-visualize"
+        description="Python / MeCab"
+      />
+      <Develop
+        imgPath="./develop/redos-checker.jpg"
+        link="https://marketplace.visualstudio.com/items?itemName=Ran350.redos-checker-for-vscode"
+        title="Redos Checker for VSCode "
+        description="extension to detect redos vulnerable"
       />
     </Section>
 
