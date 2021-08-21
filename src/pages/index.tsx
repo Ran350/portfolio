@@ -23,9 +23,10 @@ const IndexPage: NextPage = () => (
       button={
         <Button
           text="GitHub"
-          link="https://github.com/Ran350"
           name="GitHub"
           fontAwesome={faGithub}
+          link="https://github.com/Ran350"
+          isSameDomain={false}
         />
       }
     >
@@ -60,9 +61,10 @@ const IndexPage: NextPage = () => (
       button={
         <Button
           text="Gallery"
-          link="/gallery"
           name="Palette"
           fontAwesome={faPalette}
+          link="/gallery"
+          isSameDomain={true}
         />
       }
     >
