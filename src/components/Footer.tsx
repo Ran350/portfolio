@@ -1,45 +1,14 @@
-import {
-  faGithub,
-  faInstagram,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { VFC } from "react";
+import Link from "next/link";
 
-export const Footer: VFC = () => (
-  <div className="bg-gray-200 shadow-inner py-4 px-16 text-gray-400 flex justify-between">
-    <div>
-      <a href="/">Home</a>
-      <a href="/gallery" className="mx-4">
-        Gallery
-      </a>
-      <a href="/contact">Contact</a>
+export const Footer = () => (
+  <footer className="h-16 flex items-center bg-gray-50">
+    <div className="w-full grid grid-cols-5">
+      <h1 className="col-start-3 text-center">©2023 Ran350</h1>
+      <div className="col-start-5 flex gap-8">
+        <Link href="/">about</Link>
+        <Link href="/blog">blog</Link>
+        <Link href="/gallery">gallery</Link>
+      </div>
     </div>
-
-    <h1>©2021 Ran</h1>
-
-    <div>
-      {[
-        {
-          name: "Twitter",
-          icon: faTwitter,
-          url: "https://twitter.com/hoshina350",
-        },
-        {
-          name: "Instagram",
-          icon: faInstagram,
-          url: "https://www.instagram.com/ran350_3d/",
-        },
-        {
-          name: "GitHub",
-          icon: faGithub,
-          url: "https://github.com/Ran350",
-        },
-      ].map(({ name, icon, url }) => (
-        <a href={url} key={name} target="_blank" rel="noreferrer">
-          <FontAwesomeIcon title={name} icon={icon} className="ml-4 text-xl" />
-        </a>
-      ))}
-    </div>
-  </div>
+  </footer>
 );

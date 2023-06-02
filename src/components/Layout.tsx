@@ -1,11 +1,18 @@
-import { FC } from "react";
+import { ReactNode } from "react";
 
 import { Footer } from "../components/Footer";
 
-export const Layout: FC = ({ children }) => {
+import { Header } from "./Header";
+
+type Props = {
+  children: ReactNode;
+};
+
+export const Layout = ({ children }: Props) => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-grow">{children}</main>
+    <div className="font-opensans text-gray-700 min-h-screen">
+      <Header />
+      <main className="flex-grow mx-60">{children}</main>
       <Footer />
     </div>
   );
