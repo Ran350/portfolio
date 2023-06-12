@@ -82,6 +82,12 @@ export const activities: {
   description: string;
 }[] = [
   {
+    date: "2023/6",
+    title: "サイバーセキュリティシンポジウム道後2023",
+    description:
+      "「32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案」を発表、学生研究賞受賞予定",
+  },
+  {
     date: "2023/7",
     title: "DICOMO2023 シンポジウム",
     description:

@@ -10,7 +10,7 @@ import {
   certificates,
   developments,
   employments,
-  presentations,
+  // presentations,
 } from "../const/about";
 
 const IndexPage: NextPage = () => (
@@ -40,9 +40,10 @@ const IndexPage: NextPage = () => (
         <CardList cardList={developments} />
       </Section>
 
+      {/* TODO: 登壇スライドをアップロード次第、追加する
       <Section title="Presentation">
         <CardList cardList={presentations} />
-      </Section>
+      </Section> */}
     </main>
   </Layout>
 );
