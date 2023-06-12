@@ -82,7 +82,7 @@ class MyDocument extends Document {
           )}
         </Head>
 
-        <body className="bg-gray-100 font-opensans text-gray-600">
+        <body>
           <Main />
           <NextScript />
         </body>
