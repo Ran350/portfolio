@@ -5,13 +5,13 @@
   "repository": "git@github.com:Ran350/ran350.github.io.git",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "export": "next export",
+    "export": "next build && next export",
     "check": "npm-run-all check:*",
     "check:type": "tsc",
-    "check:format": "yarn prettier --check src",
-    "check:lint": "yarn eslint src"
+    "check:format": "prettier --check src",
+    "check:lint": "eslint src"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
