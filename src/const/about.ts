@@ -79,19 +79,39 @@ export const employments: {
 export const activities: {
   date: string;
   title: string;
-  description: string;
+  descriptions: string[];
 }[] = [
   {
-    date: "2023/6",
-    title: "サイバーセキュリティシンポジウム道後2023",
-    description:
-      "「32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案」を発表、学生研究賞受賞予定",
+    date: "2023/8",
+    title: "Treasure 2023",
+    descriptions: [
+      "グランプリ賞 / バックエンド賞受賞",
+      "「技術書のオンライン読書会サービス」を提案・実装・発表",
+    ],
   },
   {
     date: "2023/7",
     title: "DICOMO2023 シンポジウム",
-    description:
-      "「32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案」を 掲載・発表予定",
+    descriptions: [
+      "優秀プレゼンテーション賞 受賞",
+      "「32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案」を発表",
+    ],
+  },
+  {
+    date: "2023/6",
+    title: "サイバーセキュリティシンポジウム道後2023",
+    descriptions: [
+      "学生研究賞 受賞",
+      "「32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案」を発表",
+    ],
+  },
+  {
+    date: "2022/11",
+    title: "JPHacks 2022",
+    descriptions: [
+      "Best Hacking Sprint Award 賞 / イノベータ認定賞受賞",
+      "スマホをリモコン化する共同プレゼンテーション支援ツールを開発",
+    ],
   },
 ];
 

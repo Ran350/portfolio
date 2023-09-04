@@ -16,7 +16,7 @@ export const ChronologyList = ({
           dateFrom={chronologyProps.dateFrom}
           dateTo={chronologyProps.dateTo}
           title={chronologyProps.title}
-          description={chronologyProps.description}
+          descriptions={chronologyProps.descriptions}
         />
       </div>
     ))}
