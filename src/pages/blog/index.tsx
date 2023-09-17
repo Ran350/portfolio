@@ -2,11 +2,11 @@ import { readFileSync, readdirSync } from "fs";
 import { join } from "path";
 
 import { GetStaticProps, NextPage } from "next";
-import Link from "next/link";
 import parseMD from "parse-md";
 import { z } from "zod";
 
-import { Layout } from "../../components/Layout";
+import { BlogCard } from "@/components/blog/BlogCard";
+import { Layout } from "@/components/Layout";
 
 type BlogMeta = {
   slug: string;
@@ -20,16 +20,13 @@ type Props = {
 };
 const BlogIndexPage: NextPage<Props> = (props) => (
   <Layout>
-    {props.blogMetas.map((blogMeta) => (
-      <Link key={blogMeta.slug} href={`/blog/${blogMeta.slug}`}>
-        <div>
-          <h1>{blogMeta.title}</h1>
-          <p>{blogMeta.description}</p>
-          <p>{blogMeta.tags}</p>
-          <p>{blogMeta.publishedAt}</p>
+    <div className="mx-32 grid gap-6">
+      {props.blogMetas.map((blogMeta) => (
+        <div key={blogMeta.slug} className="">
+          <BlogCard {...blogMeta} />
         </div>
-      </Link>
-    ))}
+      ))}
+    </div>
   </Layout>
 );
 export default BlogIndexPage;
@@ -47,7 +44,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       title: z.string(),
       description: z.string(),
       tags: z.array(z.string()),
-      publishedAt: z.string(), // TODO: YYYY-MM-DD
+      publishedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
     });
     const parsed: z.infer<typeof schema> = schema.parse(metadata);
 
@@ -56,7 +53,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
   return {
     props: {
-      blogMetas,
+      blogMetas: [...blogMetas, ...blogMetas],
     },
   };
 };

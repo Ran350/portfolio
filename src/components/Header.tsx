@@ -6,7 +6,7 @@ export const Header = () => (
       <h1 className="text-xl font-telex">Ran350</h1>
       <div className="flex gap-8 text-lg">
         <Link href="/">about</Link>
-        {/* <Link href="/blog">blog</Link> */}
+        <Link href="/blog">blog</Link>
         {/* <Link href="/gallery">gallery</Link> */}
       </div>
     </header>

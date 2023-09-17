@@ -1,8 +1,8 @@
 ---
-title: Sample サンプル さんぷる
-description: サンプルのdescription
-tags: ["react"]
-publishedAt: 2023/9/17
+title: SampleサンプルさんぷるのSampleサンプルさんぷるのSampleサンプルさんぷるのSampleサンプルさんぷる
+description: サンプルのdescriptionのサンプルのdescriptionのサンプルのdescriptionのサンプルのdescriptionのサンプルのdescriptionのサンプルのdescriptionのサンプルのdescription
+tags: ["さんぷる", "サンプル", "さんぷる", "サンプル"]
+publishedAt: "2023-09-17"
 ---
 
 # へっだぁ 1
