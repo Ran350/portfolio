@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 type Props = {
-  slug: string;
+  href: string;
   title: string;
   description: string;
   tags: string[];
@@ -10,7 +10,7 @@ type Props = {
 };
 export const BlogCard: FC<Props> = (props) => (
   <div className="border border-border rounded-lg h-auto w-full cursor-pointer">
-    <Link href={`/blog/${props.slug}`}>
+    <Link href={props.href}>
       <div className="p-4 flex flex-col gap-2">
         <h2 className="text-xs text-gray-400">{props.publishedAt}</h2>
 
