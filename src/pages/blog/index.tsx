@@ -25,7 +25,7 @@ const BlogIndexPage: NextPage<Props> = (props) => (
   <Layout>
     <h1 className="text-3xl font-bold text-center">Blog</h1>
 
-    <div className="mx-32 my-8 grid gap-6">
+    <div className="lg:mx-32 mx-0 my-8 grid gap-6">
       {props.blogMetas.map((blogMeta) => (
         <div key={blogMeta.slug} className="">
           <BlogCard
