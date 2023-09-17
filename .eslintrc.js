@@ -1,5 +1,11 @@
+/**
+ * @type {import("eslint").Linter.Config}
+ */
 module.exports = {
   parser: "@typescript-eslint/parser",
+  parserOptions: {
+    project: ["./tsconfig.json", "./next.config.js"],
+  },
   plugins: ["@typescript-eslint", "jsx-a11y"],
   extends: [
     // base
@@ -32,6 +38,7 @@ module.exports = {
   },
 
   rules: {
+    "import/no-unresolved": "off",
     "import/prefer-default-export": "off",
     "react/destructuring-assignment": "off",
 

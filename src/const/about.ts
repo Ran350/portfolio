@@ -121,6 +121,10 @@ export const certificates: {
   description?: string;
 }[] = [
   {
+    date: "2023/6",
+    title: "情報処理安全確保支援士試験",
+  },
+  {
     date: "2023/3",
     title: "学士（工学）",
     description: "立命館大学 情報理工学部 セキュリティネットワークコース",
