@@ -6,28 +6,28 @@ export const ReactMarkdownComponents: ComponentProps<
 >["components"] = {
   h1: ({ children, ...props }) => (
     <h1
-      className="mt-2 border-b-2 p-2 border-gray-100 text-3xl font-bold"
+      className="mt-2 border-b-2 p-2 border-gray-100 text-2xl font-bold"
       {...props}
     >
-      <span className="mr-4 text-gray-300">#</span>
+      <span className="mr-4 text-gray-200">#</span>
       {children}
     </h1>
   ),
   h2: ({ children, ...props }) => (
-    <h2 className="text-2xl p-2 font-bold" {...props}>
-      <span className="mr-4 text-gray-300">##</span>
+    <h2 className="text-xl p-2 font-bold" {...props}>
+      <span className="mr-4 text-gray-200">##</span>
       {children}
     </h2>
   ),
   h3: ({ children, ...props }) => (
-    <h3 className="text-xl p-2  font-bold" {...props}>
-      <span className="mr-4 text-gray-300">###</span>
+    <h3 className="text-lg p-2  font-bold" {...props}>
+      <span className="mr-4 text-gray-200">###</span>
       {children}
     </h3>
   ),
   h4: ({ children, ...props }) => (
-    <h4 className="text-lg p-2 font-bold" {...props}>
-      <span className="mr-4 text-gray-300">####</span>
+    <h4 className="text-md p-2 font-bold" {...props}>
+      <span className="mr-4 text-gray-200">####</span>
       {children}
     </h4>
   ),

@@ -6,26 +6,10 @@ module.exports = {
   parserOptions: {
     project: ["./tsconfig.json", "./next.config.js"],
   },
-  plugins: ["@typescript-eslint", "jsx-a11y"],
   extends: [
-    // base
-    "eslint:recommended",
-
-    // React
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
-
-    // TypeScript
+    "plugin:@next/next/recommended",
     "plugin:@typescript-eslint/recommended",
-
-    // import
-    "plugin:import/errors",
-    "plugin:import/warnings",
-    "plugin:import/typescript",
-
-    // Prettier integration
-    "prettier",
+    "eslint:recommended",
   ],
   env: {
     es6: true,
@@ -36,30 +20,7 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
-
   rules: {
-    "import/no-unresolved": "off",
-    "import/prefer-default-export": "off",
-    "react/destructuring-assignment": "off",
-
-    // for Next.js
-    "react/react-in-jsx-scope": "off",
-    "jsx-a11y/anchor-is-valid": "off",
-
-    // for TypeScript
-    "react/prop-types": "off",
-
-    // restrict order of imports
-    "import/order": [
-      "error",
-      {
-        groups: ["builtin", "external", "parent", ["sibling", "index"]],
-        "newlines-between": "always",
-        alphabetize: {
-          order: "asc",
-          caseInsensitive: true,
-        },
-      },
-    ],
+    "@next/next/no-img-element": "off",
   },
 };
