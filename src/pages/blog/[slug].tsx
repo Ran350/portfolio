@@ -9,11 +9,13 @@ import { z } from "zod";
 import { ReactMarkdownComponents } from "@/components/blog/ReactMarkdownComponents";
 import { Layout } from "@/components/Layout";
 import { blogs } from "@/const/blog";
+import Head from "next/head";
 
 type Props = {
   metadata: {
     publishedAt: `${number}-${number}-${number}`;
     title: string;
+    description: string;
     tags: string[];
   };
   content: string;
@@ -29,6 +31,11 @@ const BlogMeta: FC<{
 
 const BlogPage: NextPage<Props> = (props) => (
   <Layout>
+    <Head>
+      <title>{props.metadata.title} | Ran350 Blog</title>
+      <meta name="description" content={props.metadata.description} />
+    </Head>
+
     <BlogMeta {...props.metadata} />
 
     <ReactMarkdown components={ReactMarkdownComponents}>
