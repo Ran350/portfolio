@@ -20,5 +20,7 @@ module.exports = {
   settings: {
     react: { version: "detect" },
   },
-  rules: {},
+  rules: {
+    "@next/next/no-img-element": "off",
+  },
 };
