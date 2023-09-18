@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "repository": "git@github.com:Ran350/ran350.github.io.git",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
