@@ -7,7 +7,8 @@ import Document, {
   NextScript,
 } from "next/document";
 
-import { GA_TRACKING_ID } from "../lib/gtag";
+import { GA_TRACKING_ID } from "@/lib/gtag";
+import { ReactElement } from "react";
 
 class MyDocument extends Document {
   static async getInitialProps(
@@ -18,7 +19,7 @@ class MyDocument extends Document {
     return initialProps;
   }
 
-  render(): JSX.Element {
+  render(): ReactElement {
     return (
       <Html lang="ja">
         <Head>
@@ -30,7 +31,7 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=optional"
           />
 
           <link
