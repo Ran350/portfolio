@@ -5,6 +5,7 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { Layout } from "@/components/Layout";
 import { articles } from "@/const/articles";
 import { blogs } from "@/const/blog";
+import Head from "next/head";
 
 type Blog = {
   type: "blog";
@@ -29,6 +30,11 @@ type Props = {
 
 const BlogIndexPage: NextPage<Props> = (props) => (
   <Layout>
+    <Head>
+      <title>Ran350 Blog</title>
+      <meta name="description" content="" />
+    </Head>
+
     <h1 className="text-3xl font-bold text-center">Blog</h1>
 
     <div className="lg:mx-32 mx-0 my-8 grid gap-6">
