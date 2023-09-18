@@ -10,7 +10,8 @@
     "check": "npm-run-all check:*",
     "check:type": "tsc",
     "check:format": "prettier --check src",
-    "check:lint": "next lint"
+    "check:lint": "next lint",
+    "fix": "prettier --write src && next lint --fix"
   },
   "dependencies": {
     "autoprefixer": "^10.4.15",
