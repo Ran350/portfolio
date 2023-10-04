@@ -60,19 +60,19 @@ export const employments: {
   dateFrom: string;
   dateTo: string;
   title: string;
-  description: string;
+  descriptions: string[];
 }[] = [
   {
     dateFrom: "2022/1",
     dateTo: "現在",
     title: "株式会社80&Company",
-    description: "ECサイト構築プロジェクトで新規機能実装や内部品質改善",
+    descriptions: ["ECサイト構築プロジェクトで新規機能実装や内部品質改善"],
   },
   {
     dateFrom: "2021/11",
     dateTo: "2022/12",
     title: "株式会社データ変換研究所",
-    description: "自律走行車の研究開発",
+    descriptions: ["自律走行車の研究開発"],
   },
 ];
 
