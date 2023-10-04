@@ -10,8 +10,7 @@ import {
   certificates,
   developments,
   employments,
-  // presentations,
-} from "../const/about";
+} from "../store/about";
 
 const IndexPage: NextPage = () => (
   <Layout>

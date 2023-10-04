@@ -8,7 +8,7 @@ import { z } from "zod";
 
 import { ReactMarkdownComponents } from "@/components/blog/ReactMarkdownComponents";
 import { Layout } from "@/components/Layout";
-import { blogs } from "@/const/blog";
+import { blogs } from "@/store/blog";
 import Head from "next/head";
 
 type Props = {

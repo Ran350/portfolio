@@ -60,19 +60,19 @@ export const employments: {
   dateFrom: string;
   dateTo: string;
   title: string;
-  description: string;
+  descriptions: string[];
 }[] = [
   {
     dateFrom: "2022/1",
     dateTo: "現在",
     title: "株式会社80&Company",
-    description: "ECサイト構築プロジェクトで新規機能実装や内部品質改善",
+    descriptions: ["ECサイト構築プロジェクトで新規機能実装や内部品質改善"],
   },
   {
     dateFrom: "2021/11",
     dateTo: "2022/12",
     title: "株式会社データ変換研究所",
-    description: "自律走行車の研究開発",
+    descriptions: ["自律走行車の研究開発"],
   },
 ];
 
@@ -118,20 +118,22 @@ export const activities: {
 export const certificates: {
   date: string;
   title: string;
-  description?: string;
+  descriptions: string[];
 }[] = [
   {
     date: "2023/6",
     title: "情報処理安全確保支援士試験",
+    descriptions: [],
   },
   {
     date: "2023/3",
     title: "学士（工学）",
-    description: "立命館大学 情報理工学部 セキュリティネットワークコース",
+    descriptions: ["立命館大学 情報理工学部 セキュリティネットワークコース"],
   },
   {
     date: "2022/12",
     title: "応用情報技術者試験",
+    descriptions: [],
   },
 ];
 
