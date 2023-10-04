@@ -22,11 +22,11 @@ export const Chronology = ({
         {title}
       </h2>
 
-      <p className="md:text-base text-sm text-gray-500">
+      <div className="md:text-base text-sm text-gray-500">
         {descriptions.map((description) => (
           <p key={description}>{description}</p>
         ))}
-      </p>
+      </div>
     </div>
   </div>
 );

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "repository": "git@github.com:Ran350/ran350.github.io.git",
+  "repository": "git@github.com:Ran350/portfolio.git",
   "engines": {
     "node": "20"
   },

@@ -8,7 +8,7 @@ export const Header = () => (
 
     <div className="flex gap-8 text-lg">
       <Link href="/">about</Link>
-      <Link href="/blog">blog</Link>
+      <Link href="/article">article</Link>
     </div>
   </header>
 );

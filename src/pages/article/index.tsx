@@ -33,16 +33,16 @@ type Props = {
 const BlogIndexPage: NextPage<Props> = (props) => (
   <Layout>
     <Head>
-      <title>Ran350 Blog</title>
-      <meta name="description" content="" />
+      <title>Ran350's Articles</title>
+      <meta name="description" content="List of my articles" />
     </Head>
 
-    <h1 className="text-3xl font-bold text-center">Blog</h1>
+    <h1 className="text-3xl font-bold text-center">Articles</h1>
 
     <div className="lg:mx-32 mx-0 my-8 grid gap-6">
       {props.items.map((item) =>
         item.type === "blog" ? (
-          <BlogCard key={item.slug} href={`blog/${item.slug}`} {...item} />
+          <BlogCard key={item.slug} href={`article/${item.slug}`} {...item} />
         ) : (
           <ArticleCard key={item.url} {...item} />
         )
