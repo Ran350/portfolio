@@ -22,8 +22,8 @@ type Article = {
   description: string;
   host: {
     name: string;
-    img?: string;
-    imgAlt?: string;
+    img: string;
+    imgAlt: string;
   };
 };
 type Props = {
