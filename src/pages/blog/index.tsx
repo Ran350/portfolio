@@ -3,8 +3,8 @@ import { GetStaticProps, NextPage } from "next";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Layout } from "@/components/Layout";
-import { articles } from "@/const/articles";
-import { blogs } from "@/const/blog";
+import { articles } from "@/store/articles";
+import { blogs } from "@/store/blog";
 import Head from "next/head";
 
 type Blog = {
@@ -13,7 +13,6 @@ type Blog = {
   slug: string;
   title: string;
   description: string;
-  tags: string[];
 };
 type Article = {
   type: "article";
@@ -21,8 +20,11 @@ type Article = {
   url: string;
   title: string;
   description: string;
-  tags: string[];
-  host: string;
+  host: {
+    name: string;
+    img?: string;
+    imgAlt?: string;
+  };
 };
 type Props = {
   items: Array<Blog | Article>;
@@ -51,8 +53,17 @@ const BlogIndexPage: NextPage<Props> = (props) => (
 export default BlogIndexPage;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const a = articles.map((a) => ({ ...a, type: "article" as const }));
-  const b = blogs.map((b) => ({ ...b, type: "blog" as const }));
+  const a: Article[] = articles
+    .map((a) => ({
+      ...a,
+      host: {
+        name: a.host,
+        img: a.hostImg,
+        imgAlt: a.hostImgAlt,
+      },
+    }))
+    .map((a) => ({ ...a, type: "article" as const }));
+  const b: Blog[] = blogs.map((b) => ({ ...b, type: "blog" as const }));
   const items: Props["items"] = [...a, ...b].sort((x, y) =>
     x.publishedAt < y.publishedAt ? 1 : -1
   );

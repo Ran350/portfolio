@@ -19,35 +19,33 @@ type Props = {
   url: string;
   title: string;
   description: string;
-  tags: string[];
-  host: string;
+  host: {
+    name: string;
+    img: string;
+    imgAlt: string;
+  };
 };
 export const ArticleCard: FC<Props> = (props) => (
   <div className="border border-border rounded-lg h-auto w-full">
-    <div className="p-4 flex flex-col gap-2">
-      <div className="flex justify-between">
-        <p className="text-xs text-gray-400">
-          {props.publishedAt} / {props.host}
-        </p>
+    <div className="p-4 flex flex-col gap-3 relative">
+      <span className="absolute top-3 right-4 material-symbols-outlined text-lg text-gray-400">
+        <Link href={props.url}>open_in_new</Link>
+      </span>
 
-        <Link href={props.url}>
-          <span className="material-symbols-outlined text-lg text-gray-400">
-            open_in_new
-          </span>
-        </Link>
-      </div>
+      <p className="text-sm text-gray-400">{props.publishedAt}</p>
 
       <Link href={props.url}>
-        <h2 className="font-semibold text-lg underline">{props.title}</h2>
+        <h2 className="font-semibold text-lg text-gray-600 underline hover:text-cyan-600">
+          {props.title}
+        </h2>
       </Link>
 
-      <p className="text-sm text-gray-500">{props.description}</p>
+      <p className="text-sm text-gray-400">{props.description}</p>
 
-      <p className="text-xs text-blue-400 flex gap-2">
-        {props.tags.map((tag) => (
-          <span key={tag}>#{tag}</span>
-        ))}
-      </p>
+      <div className="flex gap-2">
+        <img src={props.host.img} alt={props.host.imgAlt} className="w-5 h-5" />
+        <p className="text-sm text-gray-400">{props.host.name}</p>
+      </div>
     </div>
   </div>
 );

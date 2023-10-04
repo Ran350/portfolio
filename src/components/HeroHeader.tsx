@@ -1,4 +1,4 @@
-import { accounts } from "../const/about";
+import { accounts } from "../store/about";
 
 export const HeroHeader = () => (
   <div>
