@@ -4,7 +4,7 @@ type Props = {
     url: string;
     alt: string;
   };
-  description?: string;
+  description: string;
   href: string;
   tags: string[];
 };
@@ -14,7 +14,7 @@ export const Card = ({ title, image, description, tags, href }: Props) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="border border-border rounded-lg h-auto transition hover:bg-background-dark w-72"
+    className="border border-border rounded-lg transition hover:bg-background-dark sm:w-72 w-full h-72"
   >
     <img
       src={image.url}
@@ -24,9 +24,9 @@ export const Card = ({ title, image, description, tags, href }: Props) => (
     />
 
     <div className="p-4 flex flex-col gap-2">
-      <h2 className="font-semibold">{title}</h2>
-      {description && <p className="text-sm">{description}</p>}
-      <p className="text-xs text-blue-400 flex gap-2">
+      <h2 className="text-base font-bold">{title}</h2>
+      <p className="text-sm text-gray-500">{description}</p>
+      <p className="text-xs text-cyan-500 flex gap-2">
         {tags.map((tag) => (
           <span key={tag}>#{tag}</span>
         ))}

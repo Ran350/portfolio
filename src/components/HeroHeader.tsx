@@ -2,8 +2,8 @@ import { accounts } from "../store/about";
 
 export const HeroHeader = () => (
   <div>
-    <div className="bg-aiiro">
-      <canvas width={400} height={400} />
+    <div className="mx-auto bg-aiiro">
+      <canvas className="w-full h-72" />
     </div>
 
     <div className="mt-8 w-full flex justify-center">
@@ -19,8 +19,7 @@ export const HeroHeader = () => (
             <img
               src={account.image.path}
               alt={account.image.alt}
-              width={30}
-              height={30}
+              className="w-6 h-6"
             />
           </a>
         ))}
