@@ -1,5 +1,4 @@
-import { Simplify } from "../../types/Simplify";
-
+import { Simplify } from "@/types/Simplify";
 import { Chronology } from "./Chronology";
 
 type Props = {

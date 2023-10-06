@@ -1,5 +1,4 @@
-import { Simplify } from "../../types/Simplify";
-
+import { Simplify } from "@/types/Simplify";
 import { Card } from "./Card";
 
 type Props = {
