@@ -1,4 +1,3 @@
-import { GoogleAnalyticsScript } from "@/feature/googleAnalytics/GoogleAnalyticsScript";
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -7,8 +6,9 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
-
 import { ReactElement } from "react";
+
+import { GoogleAnalyticsScript } from "@/feature/googleAnalytics/GoogleAnalyticsScript";
 
 class MyDocument extends Document {
   static async getInitialProps(

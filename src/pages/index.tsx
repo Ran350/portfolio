@@ -1,7 +1,7 @@
-import { AboutPage } from "@/feature/about/routes/AboutPage";
 import { NextPage } from "next";
-
 import Head from "next/head";
+
+import { AboutPage } from "@/feature/about/routes/AboutPage";
 
 const IndexPage: NextPage = () => (
   <>

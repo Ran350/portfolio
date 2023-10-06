@@ -1,15 +1,17 @@
+import { FC } from "react";
+
 import { Layout } from "@/components/Layout";
-import { HeroHeader } from "@/feature/about/components/HeroHeader";
+
+import { CardList } from "../components/CardList";
+import { ChronologyList } from "../components/ChronologyList";
+import { HeroHeader } from "../components/HeroHeader";
+import { Section } from "../components/Section";
 import {
   activities,
   certificates,
   developments,
   employments,
-} from "@/feature/about/store/about";
-import { FC } from "react";
-import { CardList } from "../components/CardList";
-import { ChronologyList } from "../components/ChronologyList";
-import { Section } from "../components/Section";
+} from "../store/about";
 
 export const AboutPage: FC = () => (
   <Layout>

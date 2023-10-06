@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+
 import { GA_TRACKING_ID } from "./GA_TRACKING_ID";
 
 // PV 測定

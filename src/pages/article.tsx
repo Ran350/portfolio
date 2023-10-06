@@ -1,7 +1,7 @@
-import { ArticlePage } from "@/feature/article/routes/ArticlePage";
 import { NextPage } from "next";
-
 import Head from "next/head";
+
+import { ArticlePage } from "@/feature/article/routes/ArticlePage";
 
 const BlogIndexPage: NextPage = () => (
   <>
