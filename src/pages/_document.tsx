@@ -1,3 +1,4 @@
+import { GoogleAnalyticsScript } from "@/feature/googleAnalytics/GoogleAnalyticsScript";
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -7,7 +8,6 @@ import Document, {
   NextScript,
 } from "next/document";
 
-import { GA_TRACKING_ID } from "@/lib/gtag";
 import { ReactElement } from "react";
 
 class MyDocument extends Document {
@@ -24,6 +24,8 @@ class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <meta charSet="UTF-8" />
+
+          {/* Google Fonts */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Telex&display=swap"
@@ -35,6 +37,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           />
 
+          {/* favicon */}
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -64,28 +67,10 @@ class MyDocument extends Document {
             name="msapplication-config"
             content="/favicons/browserconfig.xml"
           />
+
           <meta name="theme-color" content="#ffffff" />
 
-          {/* Google Analytics */}
-          {GA_TRACKING_ID && (
-            <>
-              <script
-                async
-                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${GA_TRACKING_ID}', {
-                    page_path: window.location.pathname,
-                  });`,
-                }}
-              />
-            </>
-          )}
+          <GoogleAnalyticsScript />
         </Head>
 
         <body>

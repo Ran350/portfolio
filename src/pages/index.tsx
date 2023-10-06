@@ -6,7 +6,7 @@ import Head from "next/head";
 const IndexPage: NextPage = () => (
   <>
     <Head>
-      <title>Ran350's Portfolio</title>
+      <title>Ran350 | Portfolio</title>
       <meta name="description" content="my portfolio site" />
     </Head>
 
