@@ -3,9 +3,11 @@ type Article = {
   url: string;
   title: string;
   description: string;
-  host: string;
-  hostImg: string;
-  hostImgAlt: string;
+  hosting: {
+    name: string;
+    img: string;
+    imgAlt: string;
+  };
 };
 
 export const articles: Article[] = [
@@ -15,9 +17,11 @@ export const articles: Article[] = [
     title: "Ruby の型システムの現実的な運用を、先入観にとらわれずに考えてみた",
     description:
       "今回のインターンでは 3 週間 DX (Developer Experience) squadに所属し、「Wantedly における Ruby コードベースへの型システムの導入」をテーマに取り組んでいました。本記事では、その仮説検証の過程や調査記録を紹介します。",
-    host: "Wantedly Engineer Blog | Wantedly, Inc.",
-    hostImg: "/icon/Wantedly_Mark_LightBG.svg",
-    hostImgAlt: "Icon of Wantedly, Inc.",
+    hosting: {
+      name: "Wantedly Engineer Blog | Wantedly, Inc.",
+      img: "/icon/Wantedly_Mark_LightBG.svg",
+      imgAlt: "Icon of Wantedly, Inc.",
+    },
   },
   {
     publishedAt: "2023-09-29",
@@ -27,9 +31,11 @@ export const articles: Article[] = [
     description:
       "GMO ペパボサマーインターン 2023 にて SUZURI 事業部で行った取り組みやイベントを中心に、インターン参加記録をお送りします。",
 
-    host: "Pepabo Tech Portal | GMO ペパボ 株式会社",
-    hostImg: "/icon/pepapon_regular_rgb.svg",
-    hostImgAlt: "Icon of GMO Pepabo, Inc.",
+    hosting: {
+      name: "Pepabo Tech Portal | GMO ペパボ 株式会社",
+      img: "/icon/pepapon_regular_rgb.svg",
+      imgAlt: "Icon of GMO Pepabo, Inc.",
+    },
   },
   {
     publishedAt: "2023-07-22",
@@ -38,9 +44,11 @@ export const articles: Article[] = [
       "GitHub Codespacesを用いた日本語LaTeX執筆環境『CyTeX』を作った話【概要編】",
     description:
       "環境構築が容易で、Git管理可能、無料で利用可能な日本語LaTeX執筆環境『CyTeX』の紹介。",
-    host: "立命館大学サイバーセキュリティ研究室",
-    hostImg: "/icon/cysec-icon.png",
-    hostImgAlt: "Icon of CySec Lab.",
+    hosting: {
+      name: "立命館大学サイバーセキュリティ研究室",
+      img: "/icon/cysec-icon.png",
+      imgAlt: "Icon of CySec Lab.",
+    },
   },
   {
     publishedAt: "2023-07-13",
@@ -48,9 +56,11 @@ export const articles: Article[] = [
     title: "サイバーセキュリティシンポジウム道後2023 参加記録",
     description: `6月29日〜6月30日にかけて サイバーセキュリティシンポジウム道後2023 が愛媛県の道後にて開催され、
       学生研究賞発表のために参加してきました。`,
-    host: "立命館大学サイバーセキュリティ研究室",
-    hostImg: "/icon/cysec-icon.png",
-    hostImgAlt: "Icon of CySec Lab.",
+    hosting: {
+      name: "立命館大学サイバーセキュリティ研究室",
+      img: "/icon/cysec-icon.png",
+      imgAlt: "Icon of CySec Lab.",
+    },
   },
   {
     publishedAt: "2021-12-20",
@@ -59,8 +69,10 @@ export const articles: Article[] = [
       "正規表現が ReDoS 脆弱になる 3 つの経験則 | アドベントカレンダー 2021 20日目",
     description:
       "正規表現がReDoS脆弱性になる原因、典型的な3つのパターン、その対策方法についてのまとめ。便利な正規表現ツールやライブラリも紹介！",
-    host: "立命館コンピュータクラブ",
-    hostImg: "/icon/rcc-2019logo.png",
-    hostImgAlt: "Icon of RCC.",
+    hosting: {
+      name: "立命館コンピュータクラブ",
+      img: "/icon/rcc-2019logo.png",
+      imgAlt: "Icon of RCC.",
+    },
   },
 ];

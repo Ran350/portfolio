@@ -19,7 +19,7 @@ type Props = {
   url: string;
   title: string;
   description: string;
-  host: {
+  hosting: {
     name: string;
     img: string;
     imgAlt: string;
@@ -43,8 +43,12 @@ export const ArticleCard: FC<Props> = (props) => (
       <p className="text-sm text-gray-400">{props.description}</p>
 
       <div className="flex gap-2">
-        <img src={props.host.img} alt={props.host.imgAlt} className="w-5 h-5" />
-        <p className="text-sm text-gray-400">{props.host.name}</p>
+        <img
+          src={props.hosting.img}
+          alt={props.hosting.imgAlt}
+          className="w-5 h-5"
+        />
+        <p className="text-sm text-gray-400">{props.hosting.name}</p>
       </div>
     </div>
   </div>
