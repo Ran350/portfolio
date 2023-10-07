@@ -28,8 +28,10 @@ type Props = {
 export const ArticleCard: FC<Props> = (props) => (
   <div className="border border-border rounded-lg h-auto w-full">
     <div className="p-4 flex flex-col gap-3 relative">
-      <span className="absolute top-3 right-4 material-symbols-outlined text-lg text-gray-400">
-        <Link href={props.url}>open_in_new</Link>
+      <span className="absolute top-3 right-4 w-4 h-4">
+        <Link href={props.url}>
+          <img src="/icon/open_in_new.svg" alt="open in new" />
+        </Link>
       </span>
 
       <p className="text-sm text-gray-400">{props.publishedAt}</p>
