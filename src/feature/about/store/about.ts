@@ -10,7 +10,7 @@ export const accounts: {
     service: "GitHub",
     url: "https://github.com/Ran350",
     image: {
-      path: "/icon/github.svg",
+      path: "/service/github.svg",
       alt: "GitHub",
     },
   },
@@ -18,7 +18,7 @@ export const accounts: {
     service: "Twitter",
     url: "https://twitter.com/ran350jp",
     image: {
-      path: "/icon/twitter.svg",
+      path: "/service/twitter.svg",
       alt: "Twitter",
     },
   },
@@ -26,7 +26,7 @@ export const accounts: {
     service: "note",
     url: "https://note.com/ran350",
     image: {
-      path: "/icon/note.svg",
+      path: "/service/note.svg",
       alt: "note",
     },
   },
@@ -34,7 +34,7 @@ export const accounts: {
     service: "Instagram",
     url: "https://www.instagram.com/ran350_3d",
     image: {
-      path: "/icon/instagram.svg",
+      path: "/service/instagram.svg",
       alt: "Instagram",
     },
   },
@@ -42,7 +42,7 @@ export const accounts: {
     service: "Qiita",
     url: "https://qiita.com/Ran350",
     image: {
-      path: "/icon/qiita.png",
+      path: "/service/qiita.png",
       alt: "Qiita",
     },
   },
@@ -50,7 +50,7 @@ export const accounts: {
     service: "Zenn",
     url: "https://zenn.dev/ran350",
     image: {
-      path: "/icon/zenn.jpg",
+      path: "/service/zenn.jpg",
       alt: "Zenn",
     },
   },
@@ -58,7 +58,7 @@ export const accounts: {
     service: "Speaker Deck",
     url: "https://speakerdeck.com/ran350",
     image: {
-      path: "/icon/speakerdeck.svg",
+      path: "/service/speakerdeck.svg",
       alt: "Speaker Deck",
     },
   },
