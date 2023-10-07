@@ -19,7 +19,7 @@ export const articles: Article[] = [
       "今回のインターンでは 3 週間 DX (Developer Experience) squadに所属し、「Wantedly における Ruby コードベースへの型システムの導入」をテーマに取り組んでいました。本記事では、その仮説検証の過程や調査記録を紹介します。",
     hosting: {
       name: "Wantedly Engineer Blog | Wantedly, Inc.",
-      img: "/icon/Wantedly_Mark_LightBG.svg",
+      img: "/service/Wantedly_Mark_LightBG.svg",
       imgAlt: "Icon of Wantedly, Inc.",
     },
   },
@@ -33,7 +33,7 @@ export const articles: Article[] = [
 
     hosting: {
       name: "Pepabo Tech Portal | GMO ペパボ 株式会社",
-      img: "/icon/pepapon_regular_rgb.svg",
+      img: "/service/pepapon_regular_rgb.svg",
       imgAlt: "Icon of GMO Pepabo, Inc.",
     },
   },
@@ -46,7 +46,7 @@ export const articles: Article[] = [
       "環境構築が容易で、Git管理可能、無料で利用可能な日本語LaTeX執筆環境『CyTeX』の紹介。",
     hosting: {
       name: "立命館大学サイバーセキュリティ研究室",
-      img: "/icon/cysec-icon.png",
+      img: "/service/cysec-icon.png",
       imgAlt: "Icon of CySec Lab.",
     },
   },
@@ -58,7 +58,7 @@ export const articles: Article[] = [
       学生研究賞発表のために参加してきました。`,
     hosting: {
       name: "立命館大学サイバーセキュリティ研究室",
-      img: "/icon/cysec-icon.png",
+      img: "/service/cysec-icon.png",
       imgAlt: "Icon of CySec Lab.",
     },
   },
@@ -71,7 +71,7 @@ export const articles: Article[] = [
       "正規表現がReDoS脆弱性になる原因、典型的な3つのパターン、その対策方法についてのまとめ。便利な正規表現ツールやライブラリも紹介！",
     hosting: {
       name: "立命館コンピュータクラブ",
-      img: "/icon/rcc-2019logo.png",
+      img: "/service/rcc-2019logo.png",
       imgAlt: "Icon of RCC.",
     },
   },
