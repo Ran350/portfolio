@@ -23,6 +23,14 @@ export const accounts: {
     },
   },
   {
+    service: "note",
+    url: "https://note.com/ran350",
+    image: {
+      path: "/icon/note.svg",
+      alt: "note",
+    },
+  },
+  {
     service: "Instagram",
     url: "https://www.instagram.com/ran350_3d",
     image: {
