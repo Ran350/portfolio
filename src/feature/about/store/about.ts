@@ -39,11 +39,11 @@ export const accounts: {
     },
   },
   {
-    service: "Qiita",
-    url: "https://qiita.com/Ran350",
+    service: "openprocessing",
+    url: "https://openprocessing.org/user/208689",
     image: {
-      path: "/service/qiita.png",
-      alt: "Qiita",
+      path: "/service/openprocessing.png",
+      alt: "openprocessing",
     },
   },
   {
