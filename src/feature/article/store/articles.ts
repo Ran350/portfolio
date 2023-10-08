@@ -40,8 +40,7 @@ export const articles: Article[] = [
   {
     publishedAt: "2023-07-22",
     url: "https://cysec.ise.ritsumei.ac.jp/2023/07/22/cytex/",
-    title:
-      "GitHub Codespacesを用いた日本語LaTeX執筆環境『CyTeX』を作った話【概要編】",
+    title: "GitHub Codespacesを用いた日本語LaTeX執筆環境『CyTeX』を作った話",
     description:
       "環境構築が容易で、Git管理可能、無料で利用可能な日本語LaTeX執筆環境『CyTeX』の紹介。",
     hosting: {

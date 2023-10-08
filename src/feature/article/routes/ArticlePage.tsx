@@ -7,7 +7,7 @@ import { articles } from "../store/articles";
 
 export const ArticlePage: FC = () => (
   <Layout>
-    <h1 className="text-3xl font-bold text-center">Articles</h1>
+    <h1 className="text-3xl font-bold text-center text-aiiro">Articles</h1>
 
     <div className="lg:mx-32 mx-0 my-8 grid gap-6">
       {articles.map((article) => (

@@ -18,7 +18,7 @@ export const Chronology = ({
     </p>
 
     <div className="flex gap-2 md:gap-4 flex-col md:flex-row">
-      <h2 className="md:w-1/3 md:text-xl text-base font-bold text-gray-600">
+      <h2 className="sm:w-1/3 md:text-lg text-base font-bold text-gray-600">
         {title}
       </h2>
 

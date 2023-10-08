@@ -42,7 +42,7 @@ export const ArticleCard: FC<Props> = (props) => (
         </h2>
       </Link>
 
-      <p className="text-sm text-gray-400">{props.description}</p>
+      <p className="text-sm text-gray-500">{props.description}</p>
 
       <div className="flex gap-2">
         <img
