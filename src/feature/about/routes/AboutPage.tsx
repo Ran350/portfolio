@@ -12,14 +12,18 @@ import {
   developments,
   employments,
 } from "../store/about";
+import { SnsList } from "../components/SnsList";
 
 export const AboutPage: FC = () => (
   <Layout>
-    <div className="my-20">
-      <HeroHeader />
+    <div className="my-12">
+      <div className="mx-auto mb-8">
+        <HeroHeader />
+      </div>
+      <SnsList />
     </div>
 
-    <main className="grid grid-cols-1 gap-28 mb-24">
+    <main className="grid grid-cols-1 md:gap-24 gap-12 mb-24">
       <Section title="Employments">
         <ChronologyList chronologyList={employments} />
       </Section>
