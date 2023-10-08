@@ -17,6 +17,8 @@
     "fix": "prettier --write src && next lint --fix"
   },
   "dependencies": {
+    "@p5-wrapper/next": "^0.2.0",
+    "@p5-wrapper/react": "^4.2.0",
     "autoprefixer": "^10.4.15",
     "next": "^13.4.19",
     "parse-md": "^3.0.3",
