@@ -16,7 +16,7 @@ export const accounts: {
   },
   {
     service: "Twitter",
-    url: "https://twitter.com/ran350jp",
+    url: "https://x.com/ran350jp",
     image: {
       path: "/service/twitter.svg",
       alt: "Twitter",
@@ -50,7 +50,7 @@ export const accounts: {
     service: "Zenn",
     url: "https://zenn.dev/ran350",
     image: {
-      path: "/service/zenn.jpg",
+      path: "/service/zenn.svg",
       alt: "Zenn",
     },
   },
