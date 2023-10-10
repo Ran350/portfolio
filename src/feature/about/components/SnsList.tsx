@@ -1,3 +1,4 @@
+import { Tooltip } from "@/components/Tooltip";
 import { accounts } from "../store/about";
 
 export const SnsList = () => (
@@ -11,11 +12,13 @@ export const SnsList = () => (
           rel="noopener noreferrer"
           className="col-span-1"
         >
-          <img
-            src={account.image.path}
-            alt={account.image.alt}
-            className="w-6 h-6"
-          />
+          <Tooltip text={account.service}>
+            <img
+              src={account.image.path}
+              alt={account.image.alt}
+              className="w-6 h-6"
+            />
+          </Tooltip>
         </a>
       ))}
     </div>

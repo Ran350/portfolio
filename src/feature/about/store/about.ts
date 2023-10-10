@@ -39,11 +39,11 @@ export const accounts: {
     },
   },
   {
-    service: "openprocessing",
+    service: "OpenProcessing",
     url: "https://openprocessing.org/user/208689",
     image: {
       path: "/service/openprocessing.png",
-      alt: "openprocessing",
+      alt: "OpenProcessing",
     },
   },
   {
