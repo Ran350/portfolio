@@ -8,6 +8,7 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
     x: parentX,
     y: parentX / 2,
   };
+  const centerPos = { x: canvasSize.x / 2, y: canvasSize.y / 2 };
 
   p5.setup = () => {
     p5.createCanvas(canvasSize.x, canvasSize.y);
@@ -35,20 +36,14 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
   };
 
   class LogoBase {
-    centerPos: { x: number; y: number };
     light: Light;
-    polygonVerts: any[];
     color: string;
+    polygonVerts: any[];
     walls: Wall[];
 
-    constructor() {
-      this.centerPos = { x: canvasSize.x / 2, y: canvasSize.y / 2 };
+    constructor(verts: { x: number; y: number }[]) {
       this.light = new Light("POINT");
-      this.polygonVerts = [];
-      this.walls = [];
       this.color = "#fff";
-    }
-    init(verts: { x: number; y: number }[]) {
       this.polygonVerts = verts.map(({ x, y }) => p5.createVector(x, y));
       this.walls = verts.map(
         (_, i) =>
@@ -76,21 +71,19 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
 
   class LogoRSquare extends LogoBase {
     constructor() {
-      super();
       const verts = [
-        { x: this.centerPos.x - 150, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x - 100 + 1, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x - 100 + 1, y: this.centerPos.y + 50 },
-        { x: this.centerPos.x - 150, y: this.centerPos.y + 50 },
+        { x: centerPos.x - 150, y: centerPos.y - 50 },
+        { x: centerPos.x - 100 + 1, y: centerPos.y - 50 },
+        { x: centerPos.x - 100 + 1, y: centerPos.y + 50 },
+        { x: centerPos.x - 150, y: centerPos.y + 50 },
       ];
-      this.init(verts);
+      super(verts);
       this.color = "#bfd2dc";
     }
   }
 
   class LogoRSemicircle extends LogoBase {
     constructor() {
-      super();
       const verts: { x: number; y: number }[] = [];
       const numVertices = 16;
       for (let i = 0; i <= numVertices; i++) {
@@ -99,64 +92,60 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
         const endAngle = p5.PI / 2;
         const angle = p5.map(i, 0, numVertices, startAngle, endAngle);
         verts.push({
-          x: p5.cos(angle) * radius + this.centerPos.x - 100,
-          y: p5.sin(angle) * radius + this.centerPos.y - 50 + radius,
+          x: p5.cos(angle) * radius + centerPos.x - 100,
+          y: p5.sin(angle) * radius + centerPos.y - 50 + radius,
         });
       }
-      this.init(verts);
+      super(verts);
       this.color = "#ebeeef";
     }
   }
 
   class LogoRTriangle extends LogoBase {
     constructor() {
-      super();
       const verts = [
-        { x: this.centerPos.x - 100, y: this.centerPos.y + 15 },
-        { x: this.centerPos.x - 100, y: this.centerPos.y + 50 },
-        { x: this.centerPos.x - 65, y: this.centerPos.y + 50 },
+        { x: centerPos.x - 100, y: centerPos.y + 15 },
+        { x: centerPos.x - 100, y: centerPos.y + 50 },
+        { x: centerPos.x - 65, y: centerPos.y + 50 },
       ];
-      this.init(verts);
+      super(verts);
       this.color = "#ebeeef";
     }
   }
 
   class LogoA extends LogoBase {
     constructor() {
-      super();
       const verts = [
-        { x: this.centerPos.x, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x - 50, y: this.centerPos.y + 50 },
-        { x: this.centerPos.x + 50, y: this.centerPos.y + 50 },
+        { x: centerPos.x, y: centerPos.y - 50 },
+        { x: centerPos.x - 50, y: centerPos.y + 50 },
+        { x: centerPos.x + 50, y: centerPos.y + 50 },
       ];
-      this.init(verts);
+      super(verts);
       this.color = "#ebeeef";
     }
   }
 
   class LogoNTriangle extends LogoBase {
     constructor() {
-      super();
       const verts = [
-        { x: this.centerPos.x + 50 + 15, y: this.centerPos.y + 50 },
-        { x: this.centerPos.x + 50 + 15, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x + 140 + 15, y: this.centerPos.y + 50 },
+        { x: centerPos.x + 50 + 15, y: centerPos.y + 50 },
+        { x: centerPos.x + 50 + 15, y: centerPos.y - 50 },
+        { x: centerPos.x + 140 + 15, y: centerPos.y + 50 },
       ];
-      this.init(verts);
+      super(verts);
       this.color = "#ebeeef";
     }
   }
 
   class LogoNSquare extends LogoBase {
     constructor() {
-      super();
       const verts = [
-        { x: this.centerPos.x + 140 + 15, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x + 95 + 15, y: this.centerPos.y - 50 },
-        { x: this.centerPos.x + 95 + 15, y: this.centerPos.y + 50 },
-        { x: this.centerPos.x + 140 + 15, y: this.centerPos.y + 50 },
+        { x: centerPos.x + 140 + 15, y: centerPos.y - 50 },
+        { x: centerPos.x + 95 + 15, y: centerPos.y - 50 },
+        { x: centerPos.x + 95 + 15, y: centerPos.y + 50 },
+        { x: centerPos.x + 140 + 15, y: centerPos.y + 50 },
       ];
-      this.init(verts);
+      super(verts);
       this.color = "#bfd2dc";
     }
   }
@@ -171,12 +160,12 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
   }
 
   class Light {
-    typ: string;
+    typ: "POINT" | "SUN";
     angle: number;
     pos: any;
     shadows: any[][];
     maxDist: number;
-    constructor(typ = "POINT") {
+    constructor(typ: Light["typ"]) {
       this.typ = typ; // 0 point | 1 sun
       this.angle = 0; // If type 0 (point)
       this.pos = p5.createVector(100, 100);
@@ -218,7 +207,7 @@ export const sketch: Sketch = (p5: P5CanvasInstance) => {
         }
       }
     }
-    display(col: any) {
+    display(col: string) {
       p5.fill(col);
       p5.ellipse(this.pos.x, this.pos.y, 20, 20);
     }
