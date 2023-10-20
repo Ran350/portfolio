@@ -74,4 +74,17 @@ export const articles: Article[] = [
       imgAlt: "Icon of RCC.",
     },
   },
+  {
+    publishedAt: "2020-12-19",
+    url: "http://www.rcc.ritsumei.ac.jp/2020/1219_11083/",
+    title:
+      "#Nodevember と 3DCGにおけるノードの魅力 | アドベントカレンダー 2020 19日目",
+    description:
+      "#Nodevemberは、毎年11月に行われるノードベースの3DCG作品を盛り上げるSNS上のイベントです。#Nodevemberを通して3DCGにおけるノードの魅了をお伝えします。",
+    hosting: {
+      name: "立命館コンピュータクラブ",
+      img: "/service/rcc-2019logo.png",
+      imgAlt: "Icon of RCC.",
+    },
+  },
 ];
