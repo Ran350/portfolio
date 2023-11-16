@@ -218,6 +218,16 @@ export const developments: {
     tags: ["LaTeX", "GitHub-Codespaces"],
     href: "https://github.com/Ran350/redos-checker-for-vscode",
   },
+  {
+    title: "数学表紙デザイン ジェネレーター",
+    description: "数学の教科書の表紙風の画像を生成する Web アプリ",
+    image: {
+      url: "/develop/math-cover-generator.png",
+      alt: "math-cover-generator",
+    },
+    tags: ["Three.js"],
+    href: "https://ran350.github.io/media-processing/6/kadai5.html",
+  },
 ];
 
 export const presentations: {
