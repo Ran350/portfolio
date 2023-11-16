@@ -188,6 +188,16 @@ export const developments: {
     href: "https://github.com/ran350/ja-wordcloud",
   },
   {
+    title: "calculator",
+    description: "再帰下降構文解析による四則演算器の実装および Web UI",
+    image: {
+      url: "/develop/calculator.png",
+      alt: "calculator",
+    },
+    tags: ["algorithm", "syntax-analysis"],
+    href: "https://ran350.github.io/calculator-app",
+  },
+  {
     title: "redos-checker-for-vscode",
     description: "recheckを用いて正規表現のReDoS脆弱性を判定するVSCode拡張機能",
     image: {
