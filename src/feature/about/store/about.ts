@@ -185,7 +185,7 @@ export const developments: {
       alt: "make10",
     },
     tags: ["algorithm", "npm-package"],
-    href: "https://github.com/ran350/ja-wordcloud",
+    href: "https://github.com/ran350/make10",
   },
   {
     title: "calculator",
