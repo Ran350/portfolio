@@ -12,6 +12,30 @@ type Article = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2024-01-08",
+    url: "https://cysec.ise.ritsumei.ac.jp/2024/01/08/thesis-git-repository/",
+    title: "卒業論文のためのGitHub運用法",
+    description:
+      "所属するサイバーセキュリティ研究室での卒業論文のためのGitHub運用法について紹介している",
+    hosting: {
+      name: "立命館大学サイバーセキュリティ研究室",
+      img: "/service/cysec-icon.png",
+      imgAlt: "Icon of CySec Lab.",
+    },
+  },
+  {
+    publishedAt: "2024-01-07",
+    url: "https://cysec.ise.ritsumei.ac.jp/2024/01/07/bachelor-thesis-lecture/",
+    title: "卒論に迷えるB4生へ 卒論執筆 指南書を授けたい",
+    description:
+      "卒論を控えるB4生がスムーズに卒論を執筆し始められるように卒論執筆指南書を作成し、卒論執筆講座で共有した話。",
+    hosting: {
+      name: "立命館大学サイバーセキュリティ研究室",
+      img: "/service/cysec-icon.png",
+      imgAlt: "Icon of CySec Lab.",
+    },
+  },
+  {
     publishedAt: "2023-09-29",
     url: "https://www.wantedly.com/companies/wantedly/post_articles/545209",
     title: "Ruby の型システムの現実的な運用を、先入観にとらわれずに考えてみた",
