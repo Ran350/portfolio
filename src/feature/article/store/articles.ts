@@ -13,6 +13,18 @@ type Article = {
 export const articles: Article[] = [
   {
     publishedAt: "2024-01-08",
+    url: "https://ran350.hatenablog.jp/entry/2024/01/08/211135",
+    title: "2023年振り返り & 2024年の抱負",
+    description:
+      "2023年の12ヶ月を振り返り、得た知見と経験をKPTで整理しました。この一年間の学びを踏まえて、2024年の抱負を綴っています。",
+    hosting: {
+      name: "はてなブログ",
+      img: "/service/hatenablog.svg",
+      imgAlt: "Icon of HatenaBlog.",
+    },
+  },
+  {
+    publishedAt: "2024-01-08",
     url: "https://cysec.ise.ritsumei.ac.jp/2024/01/08/thesis-git-repository/",
     title: "卒業論文のためのGitHub運用法",
     description:
