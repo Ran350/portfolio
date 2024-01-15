@@ -167,6 +167,38 @@ export const developments: {
     href: "https://github.com/jphacks/D_2208",
   },
   {
+    title: "ReDoS Checker for VSCode",
+    description: "recheckを用いて正規表現のReDoS脆弱性を判定するVSCode拡張機能",
+    image: {
+      url: "/develop/redos-checker.jpg",
+      alt: "ReDoS Checker for VSCode",
+    },
+    tags: ["recheck", "VSCode-Extension"],
+    href: "https://github.com/Ran350/redos-checker-for-vscode",
+  },
+  {
+    title: "CyTeX",
+    description:
+      "GitHub Codespacesを用いた 環境構築が容易な 日本語LaTeX執筆環境テンプレート",
+    image: {
+      url: "/develop/CyTeX.svg",
+      alt: "CyTeX",
+    },
+    tags: ["LaTeX", "GitHub-Codespaces"],
+    href: "https://github.com/Ran350/redos-checker-for-vscode",
+  },
+  {
+    title: "MSZN Project | 見せ算",
+    description:
+      "M-1 2023 決勝ネタでさや香によって提案された「見せ算」に関するツールセットを提供",
+    image: {
+      url: "/develop/mszn.png",
+      alt: "MSZN",
+    },
+    tags: ["Syntactic-Parsing", "Turborepo", "Next.js"],
+    href: "https://mszn.vercel.app/",
+  },
+  {
     title: "ja-wordcloud",
     description:
       "高いカスタマイズ性と軽量性を備えた、日本語WordCloudを生成するサーバーレスWebアプリ",
@@ -197,27 +229,7 @@ export const developments: {
     tags: ["algorithm", "syntax-analysis"],
     href: "https://ran350.github.io/calculator-app",
   },
-  {
-    title: "redos-checker-for-vscode",
-    description: "recheckを用いて正規表現のReDoS脆弱性を判定するVSCode拡張機能",
-    image: {
-      url: "/develop/redos-checker.jpg",
-      alt: "redos-checker-for-vscode",
-    },
-    tags: ["recheck", "VSCode-Extension"],
-    href: "https://github.com/Ran350/redos-checker-for-vscode",
-  },
-  {
-    title: "CyTeX",
-    description:
-      "GitHub Codespacesを用いた 環境構築が容易な 日本語LaTeX執筆環境テンプレート",
-    image: {
-      url: "/develop/CyTeX.svg",
-      alt: "CyTeX",
-    },
-    tags: ["LaTeX", "GitHub-Codespaces"],
-    href: "https://github.com/Ran350/redos-checker-for-vscode",
-  },
+
   {
     title: "数学表紙デザイン ジェネレーター",
     description: "数学の教科書の表紙風の画像を生成する Web アプリ",
