@@ -23,14 +23,6 @@ export const accounts: {
     },
   },
   {
-    service: "note",
-    url: "https://note.com/ran350",
-    image: {
-      path: "/service/note.svg",
-      alt: "note",
-    },
-  },
-  {
     service: "Instagram",
     url: "https://www.instagram.com/ran350_3d",
     image: {
@@ -39,11 +31,11 @@ export const accounts: {
     },
   },
   {
-    service: "OpenProcessing",
-    url: "https://openprocessing.org/user/208689",
+    service: "Hatena Blog",
+    url: "https://ran350.hatenablog.jp/",
     image: {
-      path: "/service/openprocessing.png",
-      alt: "OpenProcessing",
+      path: "/service/hatenablog.svg",
+      alt: "Hatena Blog",
     },
   },
   {
@@ -60,6 +52,14 @@ export const accounts: {
     image: {
       path: "/service/speakerdeck.svg",
       alt: "Speaker Deck",
+    },
+  },
+  {
+    service: "OpenProcessing",
+    url: "https://openprocessing.org/user/208689",
+    image: {
+      path: "/service/openprocessing.png",
+      alt: "OpenProcessing",
     },
   },
 ];
