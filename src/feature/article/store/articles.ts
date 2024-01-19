@@ -40,7 +40,22 @@ const RCCBlog: Article["hosting"] = {
   imgAlt: "Icon of RCC.",
 };
 
+const Zenn: Article["hosting"] = {
+  name: "Zenn",
+  img: "/service/zenn.svg",
+  imgAlt: "Icon of Zenn.",
+};
+
 export const articles: Article[] = [
+  {
+    publishedAt: "2024-01-20",
+    url: "https://zenn.dev/ran350/scraps/2a3f91d890fd12",
+    title:
+      "マルチプラットフォーム対応Docker imageを配布してGitHub Codespacesで動かす",
+    description:
+      "ARM64/AMD64 両環境に対応したDocker Imageを作成、Docker Hubにpushし、GitHub Codespaceでコンテナを動作させたい",
+    hosting: Zenn,
+  },
   {
     publishedAt: "2024-01-14",
     url: "https://cysec.ise.ritsumei.ac.jp/2024/01/14/review-paper-via-github-pull-request/",
