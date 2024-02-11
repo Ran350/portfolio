@@ -23,6 +23,14 @@ export const accounts: {
     },
   },
   {
+    service: "BlueSky",
+    url: "https://bsky.app/profile/ran350.bsky.social",
+    image: {
+      path: "/service/bluesky.svg",
+      alt: "BlueSky",
+    },
+  },
+  {
     service: "Instagram",
     url: "https://www.instagram.com/ran350_3d",
     image: {
