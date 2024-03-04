@@ -46,6 +46,12 @@ const Zenn: Article["hosting"] = {
   imgAlt: "Icon of Zenn.",
 };
 
+const Qiita: Article["hosting"] = {
+  name: "Qiita",
+  img: "/service/qiita.png",
+  imgAlt: "Icon of Qiita.",
+};
+
 export const articles: Article[] = [
   {
     publishedAt: "2024-01-20",
@@ -120,6 +126,13 @@ export const articles: Article[] = [
     description: `6月29日〜6月30日にかけて サイバーセキュリティシンポジウム道後2023 が愛媛県の道後にて開催され、
       学生研究賞発表のために参加してきました。`,
     hosting: CysecLab,
+  },
+  {
+    publishedAt: "2022-12-27",
+    url: "https://qiita.com/80andco_tech_pr/items/10af32308f7b22c8b052",
+    title: "スキーマ駆動開発 with Open API",
+    description: "社内勉強会で登壇した内容を記事に書き起こしてもらいました。",
+    hosting: Qiita,
   },
   {
     publishedAt: "2021-12-20",
