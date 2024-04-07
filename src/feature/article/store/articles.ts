@@ -54,6 +54,14 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2024-04-02",
+    url: "https://cysec.ise.ritsumei.ac.jp/2024/04/02/4th-kyusec/",
+    title: "第4回KYUSEC 参加記録",
+    description:
+      "2024年3月18日・19日に 鹿児島県にて開催された第4回九州サイバーセキュリティシンポジウム（KYUSEC）の参加記録。",
+    hosting: CysecLab,
+  },
+  {
     publishedAt: "2024-01-20",
     url: "https://zenn.dev/ran350/scraps/2a3f91d890fd12",
     title:
