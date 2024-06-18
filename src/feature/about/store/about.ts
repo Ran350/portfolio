@@ -80,7 +80,7 @@ export const employments: {
 }[] = [
   {
     dateFrom: "2022/1",
-    dateTo: "現在",
+    dateTo: "2023/5",
     title: "株式会社80&Company",
     descriptions: ["ECサイト構築プロジェクトで新規機能実装や内部品質改善"],
   },
@@ -97,6 +97,19 @@ export const activities: {
   title: string;
   descriptions: string[];
 }[] = [
+  {
+    date: "2024/8",
+    title: "セキュリティキャンプ2024ネクスト",
+    descriptions: ["参加予定"],
+  },
+  {
+    date: "2024/6",
+    title: "ISACA大阪支部 特別講演",
+    descriptions: [
+      "研究発表",
+      "「2038年問題の原因となりうるソースコードの自動検出手法の提案と実装」",
+    ],
+  },
   {
     date: "2023/8",
     title: "Treasure 2023",
@@ -136,6 +149,11 @@ export const certificates: {
   title: string;
   descriptions: string[];
 }[] = [
+  {
+    date: "2024/4",
+    title: "情報処理安全確保支援士",
+    descriptions: ["第028175号"],
+  },
   {
     date: "2023/6",
     title: "情報処理安全確保支援士試験",
