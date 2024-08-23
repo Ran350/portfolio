@@ -54,6 +54,15 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2024-08-20",
+    url: "https://ran350.hatenablog.jp/entry/2024/08/20/184209",
+    title: "セキュリティ・キャンプ2024 ネクスト 応募課題晒し",
+    description:
+      "セキュリティ・キャンプ ネクストは、セキュリティ・キャンプ全国大会に対してさらに高度な教育を行うための特別プログラムです。選考において提出した課題を示します。",
+    hosting: HatenaBlog,
+  },
+
+  {
     publishedAt: "2024-04-02",
     url: "https://cysec.ise.ritsumei.ac.jp/2024/04/02/4th-kyusec/",
     title: "第4回KYUSEC 参加記録",
