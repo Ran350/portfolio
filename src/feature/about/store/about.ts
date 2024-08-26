@@ -100,7 +100,7 @@ export const activities: {
   {
     date: "2024/8",
     title: "セキュリティキャンプ2024ネクスト",
-    descriptions: ["参加予定"],
+    descriptions: ["セキュリティキャンプにネクスト受講生として参加"],
   },
   {
     date: "2024/6",
