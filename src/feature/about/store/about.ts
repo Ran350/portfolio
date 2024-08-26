@@ -198,6 +198,17 @@ export const developments: {
   href: string;
 }[] = [
   {
+    title: "y2k38-checker",
+    description:
+      "C言語ソースコードから2038年問題を引き起こす可能性のあるコードを検出",
+    image: {
+      url: "/develop/y2k38-checker.png",
+      alt: "y2k38-checker",
+    },
+    tags: ["clang-static-analyzer", "LLVM", "AST"],
+    href: "https://github.com/cysec-lab/y2k38-checker",
+  },
+  {
     title: "スマートポインター【JPHacks】",
     description:
       "手元のスマホをリモコン化する、共同プレゼンテーション支援ツール",
