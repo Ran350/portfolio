@@ -54,6 +54,22 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2024-08-26",
+    url: "https://ran350.hatenablog.jp/entry/2024/08/26/220706",
+    title: "ブラウザのURLバーにURLを入力して決定キーを押した時になにが起こるか",
+    description:
+      "ブラウザ、TCP、TCP、イーサネット/IPルーティング、TLSレイヤにおいてどんな処理が行われるかを調べたメモです。",
+    hosting: HatenaBlog,
+  },
+  {
+    publishedAt: "2024-08-26",
+    url: "https://ran350.hatenablog.jp/entry/2024/08/26/203843",
+    title: "セキュリティキャンプ2024 ネクスト 参加記",
+    description:
+      "2024年8月12日～8月17日に開催されたセキュリティキャンプ2024にネクスト受講生として参加してきました。本ブログでは、いくつか受講した講義をピックアップして内容および感想を紹介します。",
+    hosting: HatenaBlog,
+  },
+  {
     publishedAt: "2024-08-20",
     url: "https://ran350.hatenablog.jp/entry/2024/08/20/184209",
     title: "セキュリティ・キャンプ2024 ネクスト 応募課題晒し",
