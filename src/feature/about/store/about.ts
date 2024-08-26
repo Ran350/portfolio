@@ -98,16 +98,32 @@ export const activities: {
   descriptions: string[];
 }[] = [
   {
+    date: "2024/9",
+    title: "情報処理学会 論文誌ジャーナル「組込みシステム工学」特集 ",
+    descriptions: [
+      "査読付き論文誌（筆頭著者）",
+      "「32bitを超えるtime_t型をもつ環境における2038年問題とその検出」",
+    ],
+  },
+  {
     date: "2024/8",
     title: "セキュリティキャンプ2024ネクスト",
-    descriptions: ["参加予定"],
+    descriptions: ["TCP/IP、DDNS、CDN、FPGA、C++についての講義を受講"],
   },
   {
     date: "2024/6",
-    title: "ISACA大阪支部 特別講演",
+    title: "ISACA大阪支部 研究講演",
     descriptions: [
       "研究発表",
       "「2038年問題の原因となりうるソースコードの自動検出手法の提案と実装」",
+    ],
+  },
+  {
+    date: "2024/3",
+    title: "第54回セキュリティ心理学とトラスト研究発表会",
+    descriptions: [
+      "「SCATを用いた業務における電子メール誤送信の要因分析」",
+      "（共著）",
     ],
   },
   {
@@ -181,6 +197,17 @@ export const developments: {
   tags: string[];
   href: string;
 }[] = [
+  {
+    title: "y2k38-checker",
+    description:
+      "C言語ソースコードから2038年問題を引き起こす可能性のあるコードを検出",
+    image: {
+      url: "/develop/y2k38-checker.png",
+      alt: "y2k38-checker",
+    },
+    tags: ["clang-static-analyzer", "LLVM", "AST"],
+    href: "https://github.com/cysec-lab/y2k38-checker",
+  },
   {
     title: "スマートポインター【JPHacks】",
     description:
