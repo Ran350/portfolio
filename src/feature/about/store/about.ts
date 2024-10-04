@@ -98,6 +98,12 @@ export const activities: {
   descriptions: string[];
 }[] = [
   {
+    date: "2024/11",
+    title: "CODE BLUE 2024 学生スタッフ",
+    descriptions: ["予定"],
+  },
+
+  {
     date: "2024/9",
     title: "情報処理学会 論文誌ジャーナル「組込みシステム工学」特集 ",
     descriptions: [
@@ -125,6 +131,16 @@ export const activities: {
       "「SCATを用いた業務における電子メール誤送信の要因分析」",
       "（共著）",
     ],
+  },
+  {
+    date: "2024/3",
+    title: "公益財団法人アイコム電子通信振興財団奨学金 採択",
+    descriptions: [],
+  },
+  {
+    date: "2023/10",
+    title: "ISACA Osaka Chapter Scholarship 採択",
+    descriptions: [],
   },
   {
     date: "2023/8",
