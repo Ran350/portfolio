@@ -40,6 +40,12 @@ const RCCBlog: Article["hosting"] = {
   imgAlt: "Icon of RCC.",
 };
 
+const IPSJ: Article["hosting"] = {
+  name: "情報処理学会 電子図書館",
+  img: "/service/website.svg",
+  imgAlt: "no image",
+};
+
 const Zenn: Article["hosting"] = {
   name: "Zenn",
   img: "/service/zenn.svg",
@@ -53,6 +59,13 @@ const Qiita: Article["hosting"] = {
 };
 
 export const articles: Article[] = [
+  {
+    publishedAt: "2024-09-15",
+    url: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=239377&item_no=1&page_id=13&block_id=8",
+    title: " 32bitを超えるtime_t型を持つ環境における2038年問題とその検出",
+    description: "情報処理学会 論文誌 Vol.65 No.9（査読付き論文誌）",
+    hosting: IPSJ,
+  },
   {
     publishedAt: "2024-08-26",
     url: "https://ran350.hatenablog.jp/entry/2024/08/26/220706",
@@ -159,6 +172,13 @@ export const articles: Article[] = [
     description: `6月29日〜6月30日にかけて サイバーセキュリティシンポジウム道後2023 が愛媛県の道後にて開催され、
       学生研究賞発表のために参加してきました。`,
     hosting: CysecLab,
+  },
+  {
+    publishedAt: "2023-06-28",
+    url: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=228078&item_no=1&page_id=13&block_id=8",
+    title: "32bitを超えるtime_t型をもつ環境における2038年問題の検出手法の提案",
+    description: "マルチメディア，分散，協調とモバイルシンポジウム2023論文集",
+    hosting: IPSJ,
   },
   {
     publishedAt: "2022-12-27",

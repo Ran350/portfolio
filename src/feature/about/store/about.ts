@@ -135,12 +135,12 @@ export const activities: {
   {
     date: "2024/3",
     title: "公益財団法人アイコム電子通信振興財団奨学金 採択",
-    descriptions: [],
+    descriptions: ["令和6年度 第21期 奨学生"],
   },
   {
     date: "2023/10",
     title: "ISACA Osaka Chapter Scholarship 採択",
-    descriptions: [],
+    descriptions: ["ISACA 大阪支部 会員"],
   },
   {
     date: "2023/8",
