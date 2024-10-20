@@ -102,7 +102,14 @@ export const activities: {
     title: "CODE BLUE 2024 学生スタッフ",
     descriptions: ["予定"],
   },
-
+  {
+    date: "2024/11",
+    title: "Kansai Open Forum 2024",
+    descriptions: [
+      "ステージ企画 登壇予定",
+      "「2038年問題が思ったよりヤバい。検出ツールを作って脅威性評価してみた論文」",
+    ],
+  },
   {
     date: "2024/9",
     title: "情報処理学会 論文誌ジャーナル「組込みシステム工学」特集 ",
@@ -181,6 +188,14 @@ export const certificates: {
   title: string;
   descriptions: string[];
 }[] = [
+  {
+    date: "2025/3",
+    title: "修士（工学）予定",
+    descriptions: [
+      "立命館大学大学院",
+      "情報理工学研究科 情報理工学専攻 博士前期課程 計算機科学コース",
+    ],
+  },
   {
     date: "2024/4",
     title: "情報処理安全確保支援士",
