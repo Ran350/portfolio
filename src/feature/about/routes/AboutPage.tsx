@@ -6,13 +6,13 @@ import { CardList } from "../components/CardList";
 import { ChronologyList } from "../components/ChronologyList";
 import { HeroHeader } from "../components/HeroHeader";
 import { Section } from "../components/Section";
+import { SnsList } from "../components/SnsList";
 import {
   activities,
   certificates,
   developments,
   employments,
 } from "../store/about";
-import { SnsList } from "../components/SnsList";
 
 export const AboutPage: FC = () => (
   <Layout>
@@ -28,15 +28,15 @@ export const AboutPage: FC = () => (
         <ChronologyList chronologyList={employments} />
       </Section>
 
-      <Section title="Activities">
-        <ChronologyList
-          chronologyList={activities.map((e) => ({ dateFrom: e.date, ...e }))}
-        />
-      </Section>
-
       <Section title="Certificates">
         <ChronologyList
           chronologyList={certificates.map((e) => ({ dateFrom: e.date, ...e }))}
+        />
+      </Section>
+
+      <Section title="Activities">
+        <ChronologyList
+          chronologyList={activities.map((e) => ({ dateFrom: e.date, ...e }))}
         />
       </Section>
 
