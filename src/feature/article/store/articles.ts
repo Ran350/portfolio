@@ -46,6 +46,12 @@ const IPSJ: Article["hosting"] = {
   imgAlt: "no image",
 };
 
+const KOF: Article["hosting"] = {
+  name: "Kansai Open Forum",
+  img: "/service/website.svg",
+  imgAlt: "Icon of Kansai Open Forum.",
+};
+
 const Zenn: Article["hosting"] = {
   name: "Zenn",
   img: "/service/zenn.svg",
@@ -59,6 +65,15 @@ const Qiita: Article["hosting"] = {
 };
 
 export const articles: Article[] = [
+  {
+    publishedAt: "2024-11-09",
+    url: "https://www.k-of.jp/2024/stage/y2k38-discussion",
+    title:
+      "Kansai Open Forum 2024 ステージ発表「2038年問題が思ったよりヤバい。検出ツールを作って脅威性評価してみた論文」",
+    description:
+      "Kansai Open Forum 2024 ステージ企画にて、開発中の2038年問題検出ツールについて紹介し、2038年問題の今後について議論しました。",
+    hosting: KOF,
+  },
   {
     publishedAt: "2024-09-15",
     url: "https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=239377&item_no=1&page_id=13&block_id=8",
