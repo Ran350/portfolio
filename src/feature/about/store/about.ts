@@ -106,7 +106,7 @@ export const activities: {
     date: "2024/11",
     title: "Kansai Open Forum 2024",
     descriptions: [
-      "ステージ企画 登壇予定",
+      "ステージ企画 登壇",
       "「2038年問題が思ったよりヤバい。検出ツールを作って脅威性評価してみた論文」",
     ],
   },
