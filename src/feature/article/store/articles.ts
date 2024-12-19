@@ -46,12 +46,6 @@ const IPSJ: Article["hosting"] = {
   imgAlt: "no image",
 };
 
-const KOF: Article["hosting"] = {
-  name: "Kansai Open Forum",
-  img: "/service/website.svg",
-  imgAlt: "Icon of Kansai Open Forum.",
-};
-
 const Zenn: Article["hosting"] = {
   name: "Zenn",
   img: "/service/zenn.svg",
@@ -66,13 +60,30 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2024-12-13",
+    url: "https://xtech.nikkei.com/atcl/nxt/column/18/00989/121000165/?n_cid=nbpnxt_twbn",
+    title:
+      "日経クロステック | 対応が難しい「2038年問題」、人気OSSでも対策はまだという不安な実態",
+    description:
+      "日経クロステックにて、情報処理学会論文誌で発表した2038年問題の脅威生評価研究についてご紹介いただきました。",
+    hosting: {
+      name: "日経クロステック",
+      img: "/service/website.svg",
+      imgAlt: "Icon of Nikkei CrossTech.",
+    },
+  },
+  {
     publishedAt: "2024-11-09",
     url: "https://www.k-of.jp/2024/stage/y2k38-discussion",
     title:
       "Kansai Open Forum 2024 ステージ発表「2038年問題が思ったよりヤバい。検出ツールを作って脅威性評価してみた論文」",
     description:
       "Kansai Open Forum 2024 ステージ企画にて、開発中の2038年問題検出ツールについて紹介し、2038年問題の今後について議論しました。",
-    hosting: KOF,
+    hosting: {
+      name: "Kansai Open Forum",
+      img: "/service/website.svg",
+      imgAlt: "Icon of Kansai Open Forum.",
+    },
   },
   {
     publishedAt: "2024-09-15",
