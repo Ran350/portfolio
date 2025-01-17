@@ -197,6 +197,11 @@ export const certificates: {
     ],
   },
   {
+    date: "2025/1",
+    title: "日商簿記 2級",
+    descriptions: [],
+  },
+  {
     date: "2024/4",
     title: "情報処理安全確保支援士",
     descriptions: ["第028175号"],
