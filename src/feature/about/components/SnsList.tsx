@@ -3,7 +3,7 @@ import { accounts } from "../store/about";
 
 export const SnsList = () => (
   <div className="w-full flex justify-center">
-    <div className="flex gap-6">
+    <div className="flex gap-5 md:gap-6">
       {accounts.map((account) => (
         <a
           key={account.service}

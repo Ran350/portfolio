@@ -23,14 +23,6 @@ export const accounts: {
     },
   },
   {
-    service: "BlueSky",
-    url: "https://bsky.app/profile/ran350.bsky.social",
-    image: {
-      path: "/service/bluesky.svg",
-      alt: "BlueSky",
-    },
-  },
-  {
     service: "Instagram",
     url: "https://www.instagram.com/ran350_3d",
     image: {
@@ -99,8 +91,8 @@ export const activities: {
 }[] = [
   {
     date: "2024/11",
-    title: "CODE BLUE 2024 学生スタッフ",
-    descriptions: ["予定"],
+    title: "CODE BLUE 2024",
+    descriptions: ["学生スタッフとして参加"],
   },
   {
     date: "2024/11",
