@@ -60,6 +60,14 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2025-03-23",
+    url: "https://cysec.ise.ritsumei.ac.jp/2025/03/23/iot68-amami/",
+    title: "第68回IOT研究発表会@奄美大島への参加記",
+    description:
+      "2025年3月3日〜3月5日、奄美大島にて開催された第68回IOT研究発表会に参加しました。",
+    hosting: CysecLab,
+  },
+  {
     publishedAt: "2024-12-13",
     url: "https://xtech.nikkei.com/atcl/nxt/column/18/00989/121000165/?n_cid=nbpnxt_twbn",
     title:

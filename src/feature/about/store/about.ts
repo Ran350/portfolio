@@ -182,7 +182,7 @@ export const certificates: {
 }[] = [
   {
     date: "2025/3",
-    title: "修士（工学）予定",
+    title: "修士（工学）",
     descriptions: [
       "立命館大学大学院",
       "情報理工学研究科 情報理工学専攻 博士前期課程 計算機科学コース",
