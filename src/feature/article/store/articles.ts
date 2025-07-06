@@ -60,6 +60,18 @@ const Qiita: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2025-07-17",
+    url: "https://gihyo.jp/magazine/SD/archive/2025/202508",
+    title: "Software Design 2025年8月号 特別企画「2038年問題を考える」",
+    description:
+      "Software Design コラムに立命館大学 上原哲太郎先生と共著で寄稿させていただきました。",
+    hosting: {
+      name: "技術評論社",
+      img: "/icon/book.svg",
+      imgAlt: "Icon of a book",
+    },
+  },
+  {
     publishedAt: "2025-03-23",
     url: "https://cysec.ise.ritsumei.ac.jp/2025/03/23/iot68-amami/",
     title: "第68回IOT研究発表会@奄美大島への参加記",
