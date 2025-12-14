@@ -26,7 +26,7 @@ type Props = {
   };
 };
 export const ArticleCard: FC<Props> = (props) => (
-  <div className="border border-border rounded-lg h-auto w-full">
+  <div className="border border-gray-300 rounded-lg h-auto w-full">
     <div className="p-4 flex flex-col gap-3 relative">
       <span className="absolute top-3 right-4 w-4 h-4">
         <Link href={props.url}>

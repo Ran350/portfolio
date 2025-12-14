@@ -1,17 +1,12 @@
-import { NextPage } from "next";
-import Head from "next/head";
+import { Metadata } from "next";
 
 import { AboutPage } from "@/feature/about/routes/AboutPage";
 
-const IndexPage: NextPage = () => (
-  <>
-    <Head>
-      <title>Ran350 | Portfolio</title>
-      <meta name="description" content="my portfolio site" />
-    </Head>
+export const metadata: Metadata = {
+  title: "Ran350 | Portfolio",
+  description: "my portfolio site",
+};
 
-    <AboutPage />
-  </>
-);
-
-export default IndexPage;
+export default function IndexPage() {
+  return <AboutPage />;
+}

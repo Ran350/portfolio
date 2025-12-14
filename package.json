@@ -4,7 +4,7 @@
   "private": true,
   "repository": "git@github.com:Ran350/portfolio.git",
   "engines": {
-    "node": "20"
+    "node": ">=24.12.0"
   },
   "scripts": {
     "dev": "next dev",
@@ -13,33 +13,34 @@
     "check": "npm-run-all check:*",
     "check:type": "tsc",
     "check:format": "prettier --check src",
-    "check:lint": "next lint",
-    "fix": "prettier --write src && next lint --fix"
+    "check:eslint": "eslint .",
+    "fix": "prettier --write src && eslint . --fix"
   },
   "dependencies": {
-    "@p5-wrapper/next": "^1.0.3",
-    "@p5-wrapper/react": "^4.2.0",
-    "autoprefixer": "^10.4.15",
-    "next": "^14.2.4",
-    "parse-md": "^3.0.3",
-    "postcss": "^8.4.29",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.7",
-    "tailwindcss": "^3.3.3",
-    "zod": "^3.22.2"
+    "@p5-wrapper/next": "^3.0.1",
+    "@p5-wrapper/react": "^5.0.2",
+    "autoprefixer": "^10.4.22",
+    "next": "^16.0.10",
+    "postcss": "^8.5.6",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-markdown": "^10.1.0",
+    "tailwindcss": "^4.1.18",
+    "zod": "^4.1.13"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^13.4.19",
-    "@types/gtag.js": "^0.0.13",
-    "@types/node": "^20.6.2",
-    "@types/react": "^18.2.21",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "eslint": "^8.49.0",
-    "eslint-config-prettier": "^9.0.0",
+    "@next/eslint-plugin-next": "^16.0.10",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/gtag.js": "^0.0.20",
+    "@types/node": "^25.0.2",
+    "@types/react": "^19.2.7",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
+    "@typescript-eslint/parser": "^8.49.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.0.10",
+    "eslint-config-prettier": "^10.1.8",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
   }
 }

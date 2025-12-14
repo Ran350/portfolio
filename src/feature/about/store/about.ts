@@ -72,7 +72,7 @@ export const employments: {
 }[] = [
   {
     dateFrom: "2022/1",
-    dateTo: "2023/5",
+    dateTo: "2024/5",
     title: "株式会社80&Company",
     descriptions: ["ECサイト構築プロジェクトで新規機能実装や内部品質改善"],
   },
