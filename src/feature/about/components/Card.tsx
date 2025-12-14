@@ -14,7 +14,7 @@ export const Card = ({ title, image, description, tags, href }: Props) => (
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className="border border-border rounded-lg transition hover:bg-background-dark sm:w-72 w-full h-72"
+    className="border border-gray-300 rounded-lg transition hover:bg-background-dark sm:w-72 w-full h-72"
   >
     <img
       src={image.url}

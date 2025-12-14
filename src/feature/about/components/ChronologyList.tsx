@@ -8,7 +8,7 @@ type Props = {
 export const ChronologyList = ({
   chronologyList: chronologyPropsList,
 }: Props) => (
-  <div className="md:-my-6 -my-4 grid grid-cols-1 divide-y">
+  <div className="md:-my-6 -my-4 grid grid-cols-1 divide-y divide-gray-300">
     {chronologyPropsList.map((chronologyProps) => (
       <div key={chronologyProps.title} className="md:py-6 py-4">
         <Chronology
