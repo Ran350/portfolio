@@ -29,7 +29,7 @@
     "zod": "^4.3.5"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^16.1.4",
+    "@next/eslint-plugin-next": "^16.1.6",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^25.0.10",
