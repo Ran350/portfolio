@@ -25,6 +25,7 @@ jobs:
               core.setFailed('No PR found for workflow_run');
               return;
             }
+            // Use the first PR - workflow_run typically has one PR associated
             const pr = prs[0];
             core.setOutput('url', pr.html_url);
             core.setOutput('number', pr.number);
