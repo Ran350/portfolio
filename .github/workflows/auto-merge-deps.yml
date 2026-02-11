@@ -21,12 +21,22 @@ jobs:
         with:
           script: |
             const prs = context.payload.workflow_run.pull_requests;
-            if (!prs || prs.length === 0) {
+            let pr = prs && prs.length > 0 ? prs[0] : null;
+
+            if (!pr) {
+              const { data: pullRequests } = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                head: `${context.repo.owner}:${context.payload.workflow_run.head_branch}`,
+                state: 'open'
+              });
+              pr = pullRequests[0];
+            }
+
+            if (!pr) {
               core.setFailed('No PR found for workflow_run');
               return;
             }
-            // Use the first PR - workflow_run typically has one PR associated
-            const pr = prs[0];
             core.setOutput('url', pr.html_url);
             core.setOutput('number', pr.number);
 
@@ -45,7 +55,7 @@ jobs:
             }
 
       - name: Enable auto-merge
-        run: gh pr merge --auto --squash "$PR_URL"
+        run: gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
         env:
           PR_URL: ${{ steps.pr.outputs.url }}
           GH_TOKEN: ${{ secrets.DEPENDABOT_AUTO_MERGE_TOKEN }}
