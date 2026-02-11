@@ -30,7 +30,7 @@ jobs:
                 head: `${context.repo.owner}:${context.payload.workflow_run.head_branch}`,
                 state: 'open'
               });
-              pr = pullRequests[0];
+              pr = pullRequests.length > 0 ? pullRequests[0] : null;
             }
 
             if (!pr) {
