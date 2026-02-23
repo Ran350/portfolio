@@ -37,7 +37,8 @@ jobs:
               core.setFailed('No PR found for workflow_run');
               return;
             }
-            core.setOutput('url', pr.html_url);
+            const htmlUrl = pr.html_url || `https://github.com/${context.repo.owner}/${context.repo.repo}/pull/${pr.number}`;
+            core.setOutput('url', htmlUrl);
             core.setOutput('number', pr.number);
 
       - name: Ensure Dependabot PR
@@ -53,6 +54,9 @@ jobs:
             if (pr.user.login !== 'dependabot[bot]') {
               core.setFailed(`Not a Dependabot PR: ${pr.user.login}`);
             }
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Enable auto-merge
         run: gh pr merge --auto --squash "$PR_URL" --repo "$GITHUB_REPOSITORY"
