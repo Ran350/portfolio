@@ -25,7 +25,7 @@
     "react": "^19.2.4",
     "react-dom": "^19.2.5",
     "react-markdown": "^10.1.0",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.4",
     "zod": "^4.3.6"
   },
   "devDependencies": {
