@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^16.2.10",
-    "@tailwindcss/postcss": "^4.3.1",
+    "@tailwindcss/postcss": "^4.3.2",
     "@types/gtag.js": "^0.0.20",
     "@types/node": "^26.1.0",
     "@types/react": "^19.2.17",
