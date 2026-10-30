@@ -98,6 +98,13 @@ export const activities: {
     ],
   },
   {
+    date: "2025/7",
+    title: "Software Design 2025年8月号",
+    descriptions: [
+      "特別企画「2038年問題を考える」を上原哲太郎先生と共著で寄稿",
+    ],
+  },
+  {
     date: "2024/11",
     title: "CODE BLUE 2024",
     descriptions: ["学生スタッフとして参加"],
