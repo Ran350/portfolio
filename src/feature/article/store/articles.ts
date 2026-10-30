@@ -64,6 +64,18 @@ const FutureVulsBlog: Article["hosting"] = {
   imgAlt: "Icon of FutureVuls Blog.",
 };
 
+const FutureTechBlog: Article["hosting"] = {
+  name: "フューチャー技術ブログ",
+  img: "/service/website.svg",
+  imgAlt: "Icon of Future Tech Blog.",
+};
+
+const FutureNote: Article["hosting"] = {
+  name: "未来報 | フューチャー株式会社",
+  img: "/service/note.svg",
+  imgAlt: "Icon of note.",
+};
+
 export const articles: Article[] = [
   {
     publishedAt: "2026-10-28",
@@ -82,6 +94,30 @@ export const articles: Article[] = [
     description:
       "FutureVulsの「C/C++ライブラリ構成識別」機能について、ソースコードを直接取り込んだライブラリのバージョンをハッシュ照合で同定する仕組みと実行例を紹介しました。",
     hosting: FutureVulsBlog,
+  },
+  {
+    publishedAt: "2026-04-24",
+    url: "https://future-architect.github.io/articles/20260424a/",
+    title: "非開発業務 × Context Engineering の実践知",
+    description:
+      "お問い合わせ対応業務へのLLM Agentの導入について、Context Engineeringの観点から取り組んだ実践知を紹介しました。",
+    hosting: FutureTechBlog,
+  },
+  {
+    publishedAt: "2026-03-26",
+    url: "https://note.future.co.jp/n/n1761da1c3f7e",
+    title: "【Advanced Vol.2】市場価値を追求。ITコンサルで挑むSaaS開発",
+    description:
+      "フューチャー株式会社の公式note「未来報」の新卒アドバンスト採用インタビューシリーズ【Advanced】にて、就職活動の軸やFutureVulsチームでの業務についてインタビューいただきました。",
+    hosting: FutureNote,
+  },
+  {
+    publishedAt: "2025-07-18",
+    url: "https://future-architect.github.io/articles/20250718a/",
+    title: "Software Design 2025年8月号「2038年問題を考える」を寄稿しました",
+    description:
+      "Software Design 2025年8月号 特別企画「2038年問題を考える」への寄稿について、執筆への思いや業界貢献に対する考えを紹介しました。",
+    hosting: FutureTechBlog,
   },
   {
     publishedAt: "2025-07-17",
