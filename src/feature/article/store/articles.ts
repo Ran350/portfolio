@@ -58,7 +58,31 @@ const Qiita: Article["hosting"] = {
   imgAlt: "Icon of Qiita.",
 };
 
+const FutureVulsBlog: Article["hosting"] = {
+  name: "FutureVuls Blog | フューチャー株式会社",
+  img: "/service/website.svg",
+  imgAlt: "Icon of FutureVuls Blog.",
+};
+
 export const articles: Article[] = [
+  {
+    publishedAt: "2026-10-28",
+    url: "https://www.vuls.biz/blog/css2026-unmanaged-executable-cpe",
+    title:
+      "CSS2026でデモ発表しました Part 2――curlでインストールした実行ファイルの構成識別",
+    description:
+      "CSS2026（コンピュータセキュリティシンポジウム2026）のデモンストレーションセッションにて、パッケージマネージャーで管理されていない実行ファイルの構成識別についてポスター発表しました。",
+    hosting: FutureVulsBlog,
+  },
+  {
+    publishedAt: "2026-10-28",
+    url: "https://www.vuls.biz/blog/cpp-library-identification-background",
+    title:
+      "C/C++のライブラリ構成管理はなぜ難しいのか。同梱ライブラリのバージョンをソースから同定する",
+    description:
+      "FutureVulsの「C/C++ライブラリ構成識別」機能について、ソースコードを直接取り込んだライブラリのバージョンをハッシュ照合で同定する仕組みと実行例を紹介しました。",
+    hosting: FutureVulsBlog,
+  },
   {
     publishedAt: "2025-07-17",
     url: "https://gihyo.jp/magazine/SD/archive/2025/202508",
