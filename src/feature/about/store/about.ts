@@ -90,6 +90,21 @@ export const activities: {
   descriptions: string[];
 }[] = [
   {
+    date: "2026/10",
+    title: "コンピュータセキュリティシンポジウム2026（CSS2026）",
+    descriptions: [
+      "デモンストレーションセッションにてポスター発表",
+      "「パッケージ管理外の実行ファイルからの照合キー変換の到達可能性に関する実測」",
+    ],
+  },
+  {
+    date: "2025/7",
+    title: "Software Design 2025年8月号",
+    descriptions: [
+      "特別企画「2038年問題を考える」を上原哲太郎先生と共著で寄稿",
+    ],
+  },
+  {
     date: "2024/11",
     title: "CODE BLUE 2024",
     descriptions: ["学生スタッフとして参加"],
