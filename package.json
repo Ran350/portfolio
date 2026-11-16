@@ -17,7 +17,7 @@
     "fix": "prettier --write src && eslint . --fix"
   },
   "dependencies": {
-    "@p5-wrapper/next": "^3.0.1",
+    "@p5-wrapper/next": "^3.0.2",
     "@p5-wrapper/react": "^5.0.4",
     "autoprefixer": "^10.6.2",
     "next": "^16.4.2",
