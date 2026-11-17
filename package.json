@@ -20,7 +20,7 @@
     "@p5-wrapper/next": "^3.0.2",
     "@p5-wrapper/react": "^5.0.4",
     "autoprefixer": "^10.6.2",
-    "next": "^16.4.2",
+    "next": "^16.4.6",
     "postcss": "^8.5.32",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
