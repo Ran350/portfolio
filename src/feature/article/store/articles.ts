@@ -78,6 +78,23 @@ const FutureNote: Article["hosting"] = {
 
 export const articles: Article[] = [
   {
+    publishedAt: "2026-11-20",
+    url: "https://www.vuls.biz/blog/php-security-release-20261119-detection",
+    title:
+      "PHPのセキュリティリリース2026/11/19：今すぐ取るべき対応とFutureVulsでの確認手順",
+    description:
+      "2026年11月19日に公開されたPHPのセキュリティリリースについて、Critical 7件を含む17件の脆弱性への対応と、FutureVulsでの検知状況・確認手順を紹介しました。",
+    hosting: FutureVulsBlog,
+  },
+  {
+    publishedAt: "2026-11-20",
+    url: "https://www.vuls.biz/blog/nginx2shell-futurevuls-detection",
+    title: "NGINX2Shell：今すぐ取るべき対応とFutureVulsでの確認手順",
+    description:
+      "nginxの脆弱性「NGINX2Shell」（CVE-2026-123007）について、今すぐ取るべき対応と、FutureVulsでの検知状況・確認手順を紹介しました。",
+    hosting: FutureVulsBlog,
+  },
+  {
     publishedAt: "2026-10-28",
     url: "https://www.vuls.biz/blog/css2026-unmanaged-executable-cpe",
     title:
