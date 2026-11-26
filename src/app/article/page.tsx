@@ -3,7 +3,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Ran350 | Articles",
-  description: "List of my articles",
+  description: "Ran350 が執筆した技術記事の一覧です。",
   path: "/article",
 });
 

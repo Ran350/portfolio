@@ -3,7 +3,8 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
   title: "Ran350 | Portfolio",
-  description: "my portfolio site",
+  description:
+    "Ran350 のポートフォリオサイト。職歴・資格・活動・開発物を紹介しています。",
   path: "/",
 });
 

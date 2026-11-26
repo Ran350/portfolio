@@ -10,7 +10,7 @@ const telex = Telex({
 export const Header = () => (
   <header className="xl:px-60 lg:px-32 md:px-16 px-4 h-16 flex items-center justify-between">
     <Link href="/">
-      <h1 className={`text-xl ${telex.className}`}>Ran350</h1>
+      <p className={`text-xl ${telex.className}`}>Ran350</p>
     </Link>
 
     <div className="flex gap-8 md:text-lg text-base">
