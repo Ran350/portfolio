@@ -1,6 +1,13 @@
+import { Metadata } from "next";
 import { ReactNode } from "react";
 
+import { SITE_URL } from "@/lib/metadata";
+
 import "../styles/globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+};
 
 // import { GoogleAnalyticsScript } from "@/feature/googleAnalytics/GoogleAnalyticsScript";
 

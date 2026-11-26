@@ -1,16 +1,12 @@
-import { NextPage } from "next";
-import Head from "next/head";
-
 import { ArticlePage } from "@/feature/article/routes/ArticlePage";
+import { createMetadata } from "@/lib/metadata";
 
-const BlogIndexPage: NextPage = () => (
-  <>
-    <Head>
-      <title>Ran350 | Articles</title>
-      <meta name="description" content="List of my articles" />
-    </Head>
+export const metadata = createMetadata({
+  title: "Ran350 | Articles",
+  description: "List of my articles",
+  path: "/article",
+});
 
-    <ArticlePage />
-  </>
-);
-export default BlogIndexPage;
+export default function BlogIndexPage() {
+  return <ArticlePage />;
+}
